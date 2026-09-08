@@ -1,0 +1,2941 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMA - Sơn Cả Bầu Trời | Nhà Sản Xuất & Phân Phối Sơn MICOLL</title>
+    <meta name="description" content="SOMA - Sơn Cả Bầu Trời. Công Ty Cổ Phần Thương Mại Và Sản Xuất SOMA - Nhà sản xuất và phân phối độc quyền thương hiệu sơn và chống thấm cao cấp MICOLL.">
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/png" href="images/soma-icon.png">
+    <link rel="apple-touch-icon" href="images/soma-icon.png">
+    
+    <!-- Tailwind CSS CDN with Custom Theme Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        soma: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            300: '#7cc8fb',
+                            400: '#36abf7',
+                            500: '#0c8ee9',
+                            600: '#006ec7',
+                            700: '#0057a1',
+                            800: '#044a85',
+                            900: '#0a3d6e',
+                            950: '#072749',
+                        },
+                        navy: {
+                            800: '#0f2744',
+                            900: '#0a192f',
+                            950: '#06101e'
+                        },
+                        slatecustom: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            600: '#475569',
+                            800: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'Segoe UI', 'sans-serif'],
+                        script: ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .font-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        .bg-soma-gradient {
+            background: linear-gradient(135deg, #00B140 0%, #FFD600 25%, #FF2E8E 55%, #6A00A8 80%, #0057FF 100%);
+        }
+        .text-soma-gradient {
+            background: linear-gradient(135deg, #00B140 0%, #FFD600 25%, #FF2E8E 55%, #0057FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-light {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 12% 15%, rgba(0, 177, 64, 0.08) 0px, transparent 40%),
+                radial-gradient(at 88% 15%, rgba(255, 46, 142, 0.08) 0px, transparent 40%),
+                radial-gradient(at 50% 95%, rgba(0, 87, 255, 0.07) 0px, transparent 45%),
+                radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px;
+        }
+        .testimonial-light {
+            background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 35%, #fdf2f8 70%, #eff6ff 100%);
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+        /* Hiệu ứng nháy sáng nhẹ (Soft Glow Pulse) cho floating contact widgets */
+        @keyframes soft-glow-blue {
+            0%, 100% {
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(0, 132, 255, 0.35);
+                filter: brightness(1);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 0 18px 6px rgba(0, 132, 255, 0.7);
+                filter: brightness(1.15);
+            }
+        }
+        @keyframes soft-glow-zalo {
+            0%, 100% {
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(0, 104, 255, 0.35);
+                filter: brightness(1);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 0 18px 6px rgba(0, 104, 255, 0.7);
+                filter: brightness(1.15);
+            }
+        }
+        @keyframes soft-glow-red {
+            0%, 100% {
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(225, 29, 72, 0.35);
+                filter: brightness(1);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 0 18px 6px rgba(225, 29, 72, 0.75);
+                filter: brightness(1.15);
+            }
+        }
+        .glow-soft-messenger {
+            animation: soft-glow-blue 3s infinite ease-in-out;
+        }
+        .glow-soft-zalo {
+            animation: soft-glow-zalo 3s infinite ease-in-out 0.8s;
+        }
+        .glow-soft-phone {
+            animation: soft-glow-red 3s infinite ease-in-out 1.6s;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-soma-600 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR (Clean & Bright with Rainbow Top Stroke) -->
+    <div class="bg-white text-slate-700 text-xs py-2 px-4 border-b border-slate-200">
+        <div class="h-[3px] bg-soma-gradient w-full -mt-2 mb-2"></div>
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-2">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#00B140] via-[#FFD600] to-[#FF2E8E]"></span>
+                    <strong class="text-slate-900 tracking-wide uppercase">CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT SOMA</strong>
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="text-slate-600 font-medium flex items-center gap-1.5">
+                    <i class="fa-solid fa-truck-fast text-[#00B140]"></i> Giao hàng toàn quốc
+                </span>
+                <span class="text-slate-300">|</span>
+                <a href="tel:0889166655" class="text-rose-600 hover:text-rose-700 font-bold flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-phone"></i> 0889 166 655
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR (3 Navigation Tabs only as requested: Giới Thiệu, Sản Phẩm, Liên Hệ) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- SOMA OFFICIAL MASTER LOGO (Website Chính Thức Của SOMA) -->
+                <div class="flex items-center">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center py-1 group">
+                        <img src="images/soma-logo.png" alt="SOMA - SƠN CẢ BẦU TRỜI" class="h-12 sm:h-14 md:h-16 max-h-[68px] w-auto object-contain group-hover:scale-105 transition-transform drop-shadow-xs">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION ITEMS (Framed Capsule Menu - 4 Mục: Giới thiệu, Sản phẩm, Dự án, Liên hệ) -->
+                <nav class="hidden md:flex items-center p-1.5 rounded-full bg-slate-100/95 border border-slate-200/90 shadow-inner backdrop-blur-md gap-1">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home" class="nav-item flex items-center gap-2 px-4 lg:px-5 py-2.5 rounded-full text-xs lg:text-sm font-bold text-soma-900 bg-white shadow-sm transition">
+                        <i class="fa-solid fa-house text-xs text-soma-600"></i>
+                        <span>Giới thiệu</span>
+                    </a>
+                    <a href="javascript:void(0)" onclick="navigateTo('products')" id="nav-products" class="nav-item flex items-center gap-2 px-4 lg:px-5 py-2.5 rounded-full text-xs lg:text-sm font-semibold text-slate-600 hover:text-soma-700 hover:bg-white/70 transition">
+                        <i class="fa-solid fa-cubes text-xs text-emerald-600"></i>
+                        <span>Sản phẩm</span>
+                    </a>
+                    <a href="javascript:void(0)" onclick="navigateTo('projects')" id="nav-projects" class="nav-item flex items-center gap-2 px-4 lg:px-5 py-2.5 rounded-full text-xs lg:text-sm font-semibold text-slate-600 hover:text-soma-700 hover:bg-white/70 transition">
+                        <i class="fa-solid fa-city text-xs text-indigo-600"></i>
+                        <span>Dự án</span>
+                    </a>
+                    <a href="javascript:void(0)" onclick="navigateTo('contact')" id="nav-contact" class="nav-item flex items-center gap-2 px-4 lg:px-5 py-2.5 rounded-full text-xs lg:text-sm font-semibold text-slate-600 hover:text-soma-700 hover:bg-white/70 transition">
+                        <i class="fa-solid fa-headset text-xs text-blue-600"></i>
+                        <span>Liên hệ</span>
+                    </a>
+                </nav>
+
+                <!-- HEADER ACTIONS (Search, Phone, Cart) -->
+                <div class="flex items-center gap-4">
+                    <!-- Search Icon Button -->
+                    <button onclick="toggleSearchModal()" class="w-10 h-10 rounded-full text-slate-600 hover:text-soma-700 hover:bg-slate-100 flex items-center justify-center transition" title="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+                    
+                    <!-- Quick Contact Hotline (Desktop) -->
+                    <a href="tel:0889166655" class="hidden lg:flex items-center gap-2.5 bg-slate-100 hover:bg-soma-50 text-soma-900 border border-slate-200 px-3.5 py-1.5 rounded-full text-sm font-semibold transition">
+                        <span class="w-6 h-6 rounded-full bg-soma-600 text-white flex items-center justify-center text-xs">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>0889 166 655</span>
+                    </a>
+
+                    <!-- Cart Button with Count Badge -->
+                    <button onclick="toggleCartDrawer()" class="relative w-11 h-11 rounded-full bg-soma-50 text-soma-800 hover:bg-soma-100 border border-soma-200 flex items-center justify-center transition shadow-sm" title="Giỏ hàng">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md">
+                            0
+                        </span>
+                    </button>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 rounded-lg text-slate-700 hover:bg-slate-100 flex items-center justify-center">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+            <a href="javascript:void(0)" onclick="navigateTo('home'); toggleMobileMenu()" class="flex items-center px-4 py-3 rounded-xl text-sm font-bold text-soma-800 bg-soma-50">
+                <i class="fa-solid fa-house mr-3 text-soma-600 text-base"></i> Giới thiệu
+            </a>
+            <a href="javascript:void(0)" onclick="navigateTo('products'); toggleMobileMenu()" class="flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-cubes mr-3 text-emerald-600 text-base"></i> Sản phẩm
+            </a>
+            <a href="javascript:void(0)" onclick="navigateTo('projects'); toggleMobileMenu()" class="flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-city mr-3 text-indigo-600 text-base"></i> Dự án
+            </a>
+            <a href="javascript:void(0)" onclick="navigateTo('contact'); toggleMobileMenu()" class="flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-headset mr-3 text-blue-600 text-base"></i> Liên hệ
+            </a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:0889166655" class="w-full text-center bg-rose-600 text-white py-2.5 rounded-xl font-bold text-sm shadow">
+                    <i class="fa-solid fa-phone mr-1.5"></i> Hotline: 0889 166 655
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: TRANG CHỦ / GIỚI THIỆU (HOME VIEW - Corresponding to Images 1 to 5) -->
+    <!-- ========================================================================= -->
+    <main id="view-home" class="view-section flex-grow">
+
+        <!-- 1. HERO SECTION: Bright Modern Aesthetic with MICOLL Rainbow Styling -->
+        <section class="hero-light relative overflow-hidden py-12 lg:py-20 border-b border-slate-200/80">
+            <!-- Decorative Subtle Ambient Glows -->
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-[450px] h-[450px] bg-pink-300/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-20 left-1/3 w-[500px] h-[300px] bg-blue-300/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+
+                        
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-900">
+                            SƠN CẢ BẦU TRỜI <br class="hidden sm:inline">
+                            <span class="bg-gradient-to-r from-[#00B140] via-[#F59E0B] via-[#FF2E8E] to-[#0057FF] bg-clip-text text-transparent">
+                                Nâng Tầm Cuộc Sống
+                            </span>
+                        </h1>
+                        
+                        <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Thương hiệu sơn & chống thấm cao cấp <strong>MICOLL</strong> được nghiên cứu, sản xuất và phân phối độc quyền bởi <strong>Công Ty SOMA</strong>. <em>"Mang sắc màu đến mọi công trình, nâng tầm cuộc sống."</em> Cam kết độ bền màu vượt trội, kháng kiềm chống thấm đỉnh cao.
+                        </p>
+
+                        <!-- Highlights list -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-slate-700">
+                            <div class="flex items-center gap-2.5 bg-white border border-slate-200 shadow-sm p-3 rounded-xl hover:border-emerald-400 transition">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-[#00B140] flex items-center justify-center font-bold text-base">
+                                    <i class="fa-solid fa-droplet-slash"></i>
+                                </span>
+                                <span class="font-semibold text-slate-800">Chống thấm Nano</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-white border border-slate-200 shadow-sm p-3 rounded-xl hover:border-pink-400 transition">
+                                <span class="w-8 h-8 rounded-lg bg-pink-50 text-[#FF2E8E] flex items-center justify-center font-bold text-base">
+                                    <i class="fa-solid fa-shield-heart"></i>
+                                </span>
+                                <span class="font-semibold text-slate-800">Bảo hành 10 năm</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-white border border-slate-200 shadow-sm p-3 rounded-xl hover:border-blue-400 transition col-span-2 sm:col-span-1">
+                                <span class="w-8 h-8 rounded-lg bg-blue-50 text-[#0057FF] flex items-center justify-center font-bold text-base">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </span>
+                                <span class="font-semibold text-slate-800">An toàn thân thiện</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                            <button onclick="navigateTo('products')" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-soma-700 to-blue-600 hover:from-soma-800 hover:to-blue-700 text-white font-bold text-base shadow-lg shadow-blue-500/25 hover:-translate-y-0.5 transition flex items-center gap-2.5">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Xem sản phẩm MICOLL</span>
+                            </button>
+                            <button onclick="navigateTo('contact')" class="px-7 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-base shadow-sm hover:shadow transition flex items-center gap-2">
+                                <i class="fa-solid fa-phone-volume text-soma-600"></i>
+                                <span>Liên hệ tư vấn</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual (Clean, Harmonious, No Awkward Overlapping Elements) -->
+                    <div class="lg:col-span-5 flex justify-center relative">
+                        <div class="relative w-[340px] h-[420px] sm:w-[420px] sm:h-[500px]">
+                            
+                            <!-- Main rainbow-inspired circular backdrop -->
+                            <div class="absolute bottom-4 right-4 w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] rounded-full bg-gradient-to-br from-emerald-100/80 via-amber-50/80 via-pink-100/80 to-blue-100/80 shadow-lg border-2 border-white"></div>
+                            <!-- Rainbow ring accent -->
+                            <div class="absolute bottom-2 right-2 w-[290px] h-[290px] sm:w-[365px] sm:h-[365px] rounded-full border-2 border-transparent bg-gradient-to-r from-[#00B140] via-[#FFD600] via-[#FF2E8E] to-[#0057FF] opacity-35"></div>
+                            
+                            <!-- Painter Image (clean transparent cutout, perfectly centered) -->
+                            <div class="relative z-10 w-full h-full flex items-end justify-center">
+                                <img src="images/painter-hero-transparent.png" alt="Chuyên gia thi công sơn MICOLL SOMA" class="w-[88%] h-auto max-h-[100%] object-contain hover:scale-[1.02] transition-transform duration-500 drop-shadow-2xl">
+                            </div>
+
+                            <!-- Floating badge 1: top right -->
+                            <div class="absolute top-6 right-0 z-20 bg-white/95 backdrop-blur-md text-slate-800 px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2.5 border border-slate-200/80">
+                                <span class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-check-double"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-900">Sơn MICOLL 100%</div>
+                                    <div class="text-[10px] text-slate-500 font-semibold">Chính hãng SOMA</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating badge 2: bottom left (Replaces awkward circle with clean professional badge) -->
+                            <div class="absolute bottom-6 -left-2 z-20 bg-white/95 backdrop-blur-md text-slate-800 px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-200/80">
+                                <span class="w-8 h-8 rounded-xl bg-blue-50 text-[#0057FF] flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-900">Bảo hành 10 năm</div>
+                                    <div class="text-[10px] text-slate-500 font-semibold">Chống thấm công nghệ Nano</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CATEGORY HIGHLIGHTS BAR (Matching Image 2 Top Section) -->
+        <section class="py-12 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <span class="font-script text-xl text-soma-600 font-bold block">Danh mục</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Các dòng sản phẩm nổi bật
+                    </h2>
+                </div>
+
+                <!-- 4 Category Cards with SOMA Vibrant Brand Colors -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                    
+                    <!-- Cat 1: Blue #0057FF -->
+                    <div onclick="filterProductsCategory('ngoai-that')" class="cursor-pointer group bg-white hover:bg-blue-50/50 p-6 rounded-2xl border border-slate-200 hover:border-[#0057FF] transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-lg hover:-translate-y-1">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0057FF] text-2xl mb-4 group-hover:scale-110 group-hover:bg-[#0057FF] group-hover:text-white transition shadow-sm">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-[#0057FF] text-white rounded-full text-xs sm:text-sm font-bold tracking-wide shadow-sm group-hover:shadow-md transition">
+                            Sơn Ngoại Thất
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Chống thấm & Kháng tia UV</p>
+                    </div>
+
+                    <!-- Cat 2: Pink Magenta #FF2E8E -->
+                    <div onclick="filterProductsCategory('noi-that')" class="cursor-pointer group bg-white hover:bg-pink-50/50 p-6 rounded-2xl border border-slate-200 hover:border-[#FF2E8E] transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-lg hover:-translate-y-1">
+                        <div class="w-16 h-16 rounded-2xl bg-pink-50 border border-pink-100 flex items-center justify-center text-[#FF2E8E] text-2xl mb-4 group-hover:scale-110 group-hover:bg-[#FF2E8E] group-hover:text-white transition shadow-sm">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-[#FF2E8E] text-white rounded-full text-xs sm:text-sm font-bold tracking-wide shadow-sm group-hover:shadow-md transition">
+                            Sơn Nội Thất
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Lau chùi tối ưu, kháng khuẩn</p>
+                    </div>
+
+                    <!-- Cat 3: Green #00B140 -->
+                    <div onclick="filterProductsCategory('phu-gia')" class="cursor-pointer group bg-white hover:bg-emerald-50/50 p-6 rounded-2xl border border-slate-200 hover:border-[#00B140] transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-lg hover:-translate-y-1">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#00B140] text-2xl mb-4 group-hover:scale-110 group-hover:bg-[#00B140] group-hover:text-white transition shadow-sm">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-[#00B140] text-white rounded-full text-xs sm:text-sm font-bold tracking-wide shadow-sm group-hover:shadow-md transition">
+                            Phụ Gia Chống Thấm
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Latex, CT-11A, kết nối vữa</p>
+                    </div>
+
+                    <!-- Cat 4: Purple #6A00A8 -->
+                    <div onclick="filterProductsCategory('chuyen-dung')" class="cursor-pointer group bg-white hover:bg-purple-50/50 p-6 rounded-2xl border border-slate-200 hover:border-[#6A00A8] transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-lg hover:-translate-y-1">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center text-[#6A00A8] text-2xl mb-4 group-hover:scale-110 group-hover:bg-[#6A00A8] group-hover:text-white transition shadow-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-[#6A00A8] text-white rounded-full text-xs sm:text-sm font-bold tracking-wide shadow-sm group-hover:shadow-md transition">
+                            Chống Thấm Chuyên Dụng
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Màng PU, gốc xi măng, Epoxy</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SECTION (Matching Image 2 Bottom Section) -->
+        <section class="py-16 bg-slate-50 border-b border-slate-200 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Images with Certified Stamp (Clean, High-end Showcase - Không bị lệch hay che hình) -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative max-w-lg mx-auto">
+                            <!-- Main Showcase Image (MICOLL Paint in Villa Setting) -->
+                            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 group relative">
+                                <img src="images/soma-hq.jpg" alt="Trụ sở và nhà máy sản xuất SOMA" class="w-full h-80 sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent"></div>
+                                
+                                <!-- Integrated Floating Info Badge inside image -->
+                                <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl border border-white/50 shadow-lg flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-xl bg-soma-50 text-soma-700 flex items-center justify-center font-bold text-lg">
+                                            <i class="fa-solid fa-industry"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs font-bold text-slate-900">Trụ sở & Tổ hợp Nhà máy Sản xuất SOMA</div>
+                                            <div class="text-[10px] text-slate-500 font-semibold">Quy trình tự động hóa & Trung tâm R&D tiêu chuẩn ISO</div>
+                                        </div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-[#00B140] text-xs font-bold border border-emerald-200">ISO 9001:2015</span>
+                                </div>
+                            </div>
+
+                            <!-- Certified Stamp Badge -->
+                            <div class="absolute -top-5 -left-5 w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-dashed border-slate-700 bg-white/95 backdrop-blur-sm p-1.5 shadow-xl flex items-center justify-center text-center animate-pulse-slow z-20">
+                                <div class="w-full h-full rounded-full border border-slate-700 flex flex-col items-center justify-center p-1 text-slate-900">
+                                    <i class="fa-solid fa-stamp text-soma-700 text-lg"></i>
+                                    <span class="text-[9px] font-black uppercase tracking-wider mt-0.5">CHỨNG NHẬN</span>
+                                    <span class="text-[8px] font-bold text-soma-700">ISO 9001:2015</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Text Content -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-soma-100 text-soma-800 text-xs font-bold uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-star text-yellow-500"></i> Câu Chuyện Thương Hiệu SOMA
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                                Công Ty Cổ Phần Thương Mại Và Sản Xuất SOMA
+                            </h2>
+
+                        </div>
+
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Là doanh nghiệp được sáng lập bởi những người trẻ tuổi dám dấn thân và đam mê mạo hiểm với ngành vật liệu xây dựng — mang khát khao thổi sức sống mới mẻ, hiện đại vào từng mảng tường công trình Việt.
+                        </p>
+
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Lấy cảm hứng từ biểu tượng chữ <strong>S</strong> kết nối <strong>Mặt Trăng & Trái Đất</strong> — biểu trưng cho sự tuần hoàn, che chở và phục hồi bền vững. Logo <strong>SOMA</strong> với điểm tròn đồng tâm trong chữ <strong>A</strong> là cam kết khởi nguồn cho chất lượng đỉnh cao và uy tín trường tồn.
+                        </p>
+
+                        <div class="p-4 rounded-2xl bg-gradient-to-r from-soma-50 to-blue-50 border border-soma-100">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 h-10 rounded-xl bg-soma-600 text-white flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </span>
+                                <p class="text-sm font-bold text-soma-900 italic">
+                                    "Mang sắc màu đến mọi công trình, nâng tầm cuộc sống. Cảm ơn Quý khách hàng đã luôn đồng hành và trao gửi niềm tin trọn vẹn cho SOMA!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Key Stats -->
+                        <div class="grid grid-cols-3 gap-4 pt-2 border-t border-slate-200">
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">100%</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Chuẩn Quốc Tế ISO</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">500+</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Công trình hoàn thiện</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">10 Năm</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Bền màu chống thấm</div>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="pt-2 flex flex-wrap items-center gap-4">
+                            <button onclick="navigateTo('products')" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#0057FF] to-[#00B140] hover:from-[#0047d9] hover:to-[#009435] text-white font-bold text-sm shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Khám phá sản phẩm SOMA</span>
+                            </button>
+                            <button onclick="navigateTo('contact')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-bold text-sm shadow-sm transition">
+                                <i class="fa-solid fa-phone text-[#0057FF]"></i>
+                                <span>Tư vấn kỹ thuật</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PRODUCTS (Matching Image 3 on Home View) -->
+        <section class="py-16 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                    <div>
+                        <span class="font-script text-xl text-soma-600 font-bold block">Gian hàng chính hãng</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                            Sản phẩm nổi bật
+                        </h2>
+                    </div>
+
+                    <!-- Category Tabs (Matching Image 3 Pills) -->
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterHomeProducts('all', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-soma-700 text-white shadow-sm transition">
+                            Tất cả
+                        </button>
+                        <button onclick="filterHomeProducts('ngoai-that', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Sơn ngoại thất
+                        </button>
+                        <button onclick="filterHomeProducts('noi-that', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Sơn nội thất
+                        </button>
+                        <button onclick="filterHomeProducts('phu-gia', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Phụ gia chống thấm
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Products Grid (Matching Image 3 Product Cards) -->
+                <div id="home-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Dynamic Product Cards injected via JS -->
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center mt-10">
+                    <button onclick="navigateTo('products')" class="px-8 py-3 rounded-full border-2 border-soma-700 text-soma-800 hover:bg-soma-700 hover:text-white font-bold text-sm transition inline-flex items-center gap-2">
+                        <span>Xem toàn bộ danh mục sản phẩm</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TESTIMONIALS SECTION (Bright, Fresh, Modern) -->
+        <section class="testimonial-light py-16 lg:py-20 relative overflow-hidden text-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Left Title & Intro -->
+                    <div class="lg:col-span-5 space-y-4 text-center lg:text-left">
+                        <span class="font-script text-2xl text-soma-700 font-bold block">Đánh giá</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            Khách hàng đánh giá
+                        </h2>
+                        <p class="text-slate-600 text-base max-w-md mx-auto lg:mx-0 leading-relaxed">
+                            Hơn 1.000 khách hàng, nhà thầu và gia chủ đã hoàn toàn tin chọn sơn MICOLL sản xuất bởi SOMA cho độ bền đẹp trường tồn.
+                        </p>
+                        <div class="pt-4 flex items-center justify-center lg:justify-start gap-3 text-amber-400 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-800 text-sm font-bold ml-2">5.0 / 5.0 (Hài lòng tuyệt đối)</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Testimonial Card -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200/80 flex flex-col sm:flex-row items-center gap-6 relative">
+                            <i class="fa-solid fa-quote-right absolute top-6 right-8 text-4xl sm:text-5xl text-slate-200 select-none"></i>
+                            
+                            <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shrink-0 border-2 border-slate-200 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Chị Thảo My" class="w-full h-full object-cover">
+                            </div>
+
+                            <div class="space-y-3 relative z-10 text-center sm:text-left">
+                                <div class="flex items-center justify-center sm:justify-start text-amber-400 text-sm gap-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
+                                    "Nhờ sử dụng dòng sơn ngoại thất chống thấm MICOLL Nano Guard và phụ gia MICOLL Latex do SOMA cung cấp cho dự án biệt thự tại Hải Phòng, công trình trải qua mùa mưa bão lớn mà tường nhà vẫn láng mịn, không hề ngấm nước. Rất tin tưởng chất lượng SOMA!"
+                                </p>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-900 text-base">Chị Thảo My</h4>
+                                    <p class="text-xs text-soma-700 font-semibold">Đại diện Công ty Kiến trúc & Xây dựng ABC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.5 FEATURED PROJECTS SHOWCASE (Công trình tin tưởng sử dụng sơn SOMA) -->
+        <section id="featured-projects-section" class="py-16 bg-slate-50 border-b border-slate-200 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-2.5">
+                            <i class="fa-solid fa-city"></i> Bảo chứng chất lượng thực tế
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            Công trình tin tưởng sử dụng SOMA & MICOLL
+                        </h2>
+                        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                            Từ biệt thự ven sông, khu căn hộ cao tầng đến tổ hợp công nghiệp & resort biển — sơn SOMA và thương hiệu MICOLL khẳng định chất lượng qua hàng trăm công trình trên toàn quốc.
+                        </p>
+                    </div>
+                    <button onclick="navigateTo('projects')" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm shadow-md hover:shadow-lg transition flex-shrink-0">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Xem tất cả dự án</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- 3 Flagship Projects Preview Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Project 1: Vinhomes Riverside Villa -->
+                    <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group cursor-pointer" onclick="navigateTo('projects')">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="images/project-villa-riverside.jpg" alt="Biệt thự Vinhomes Riverside" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-soma-800 border border-slate-200 shadow-xs">
+                                <i class="fa-solid fa-house-chimney text-emerald-600 mr-1"></i> Biệt thự cao cấp
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md px-2.5 py-0.5 rounded-lg text-[11px] font-medium text-white">
+                                Hà Nội
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <div class="text-[11px] font-bold text-indigo-600 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                                    <i class="fa-solid fa-shield-halved"></i> Đối tác: Nhà thầu TCCM
+                                </div>
+                                <h3 class="font-extrabold text-slate-900 text-base group-hover:text-soma-700 transition line-clamp-1">
+                                    Biệt thự Đơn lập Vinhomes Riverside
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">
+                                    Sử dụng sơn MICOLL Ultra Shield bóng ngọc trai và sơn lót kháng kiềm Nano Sealer, chống rêu mốc tối đa trong điều kiện nồm ẩm.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+                                <span class="font-semibold text-emerald-700"><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Đã hoàn thiện</span>
+                                <span class="text-soma-700 font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Chi tiết <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Grand Star Urban Tower -->
+                    <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group cursor-pointer" onclick="navigateTo('projects')">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="images/project-urban-tower.jpg" alt="Tổ hợp căn hộ Grand Star" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-soma-800 border border-slate-200 shadow-xs">
+                                <i class="fa-solid fa-building text-blue-600 mr-1"></i> Khu đô thị & Căn hộ
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md px-2.5 py-0.5 rounded-lg text-[11px] font-medium text-white">
+                                Bắc Từ Liêm, Hà Nội
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <div class="text-[11px] font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                                    <i class="fa-solid fa-shield-halved"></i> Đối tác: TCCM & Coteccons
+                                </div>
+                                <h3 class="font-extrabold text-slate-900 text-base group-hover:text-soma-700 transition line-clamp-1">
+                                    Tổ hợp Căn hộ Grand Star Urban
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">
+                                    Quy mô 2 tháp 25 tầng với 48.000m² bề mặt tường. Dòng sơn nội thất MICOLL Satin không mùi, kháng kiềm cực cao bảo vệ màng sơn lâu dài.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+                                <span class="font-semibold text-emerald-700"><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Đã hoàn thiện</span>
+                                <span class="text-soma-700 font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Chi tiết <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Eco Retreat Halong Resort -->
+                    <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group cursor-pointer" onclick="navigateTo('projects')">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="images/project-halong-resort.jpg" alt="Eco Retreat Halong Resort" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-soma-800 border border-slate-200 shadow-xs">
+                                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-1"></i> Resort biển cao cấp
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md px-2.5 py-0.5 rounded-lg text-[11px] font-medium text-white">
+                                Hạ Long, Quảng Ninh
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <div class="text-[11px] font-bold text-amber-600 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                                    <i class="fa-solid fa-shield-halved"></i> Đối tác: Nhà thầu TCCM
+                                </div>
+                                <h3 class="font-extrabold text-slate-900 text-base group-hover:text-soma-700 transition line-clamp-1">
+                                    Quần thể Biệt thự Eco Retreat
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">
+                                    35 căn villa mặt biển áp dụng sơn chống thấm siêu co giãn SOMA Proof Ultra và MICOLL kháng muối kiềm, chống chọi hơi mặn bão biển.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+                                <span class="font-semibold text-emerald-700"><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Đã hoàn thiện</span>
+                                <span class="text-soma-700 font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Chi tiết <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PARTNERS & CONTRACTORS SECTION (With TCCM Owl Logo) -->
+        <section id="partners-section" class="py-14 bg-white border-b border-slate-200 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-handshake"></i> Hợp tác & Đồng hành
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8 tracking-tight">
+                    Đối tác & Nhà thầu tin dùng
+                </h3>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 items-center justify-center max-w-5xl mx-auto">
+                    
+                    <!-- Partner 1: TCCM with Owl Logo -->
+                    <div class="group bg-slate-50 hover:bg-white p-5 rounded-2xl border-2 border-slate-200 hover:border-slate-900 transition-all flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-xl hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-slate-950 p-1.5 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                            <img src="images/tccm-owl-white.png" alt="TCCM Logo Con Cú" class="w-11 h-11 object-contain">
+                        </div>
+                        <div class="text-center">
+                            <span class="text-base font-black text-slate-900 tracking-wider uppercase block">TCCM</span>
+                            <span class="text-[10px] text-slate-500 font-bold block">Nhà thầu chiến lược</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 2: VINACONEX -->
+                    <div class="group bg-slate-50 hover:bg-white p-5 rounded-2xl border-2 border-slate-200 hover:border-blue-600 transition-all flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-xl hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center text-2xl shadow-xs group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-base font-black text-slate-900 tracking-wider uppercase block">VINACONEX</span>
+                            <span class="text-[10px] text-slate-500 font-bold block">Tổng thầu xây dựng</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 3: COTECCONS -->
+                    <div class="group bg-slate-50 hover:bg-white p-5 rounded-2xl border-2 border-slate-200 hover:border-emerald-600 transition-all flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-xl hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl shadow-xs group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-base font-black text-slate-900 tracking-wider uppercase block">COTECCONS</span>
+                            <span class="text-[10px] text-slate-500 font-bold block">Tập đoàn xây dựng</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 4: HÒA BÌNH CORP -->
+                    <div class="group bg-slate-50 hover:bg-white p-5 rounded-2xl border-2 border-slate-200 hover:border-sky-600 transition-all flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-xl hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-700 flex items-center justify-center text-2xl shadow-xs group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-house-laptop"></i>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-base font-black text-slate-900 tracking-wider uppercase block">HÒA BÌNH</span>
+                            <span class="text-[10px] text-slate-500 font-bold block">Nhà thầu dân dụng</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 5: DELTA GROUP -->
+                    <div class="group bg-slate-50 hover:bg-white p-5 rounded-2xl border-2 border-slate-200 hover:border-indigo-600 transition-all flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-xl hover:-translate-y-1 col-span-2 sm:col-span-1">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-2xl shadow-xs group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-base font-black text-slate-900 tracking-wider uppercase block">DELTA GROUP</span>
+                            <span class="text-[10px] text-slate-500 font-bold block">Tập đoàn xây dựng</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: TRANG SẢN PHẨM (CATALOG VIEW - Matching Image 6) -->
+    <!-- ========================================================================= -->
+    <main id="view-products" class="view-section flex-grow hidden bg-slate-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-900 font-bold">Danh sách sản phẩm MICOLL</span>
+            </nav>
+
+            <!-- INTERACTIVE PAINT CALCULATOR ON PRODUCTS PAGE (Tính năng dự toán trực tiếp tại gian hàng) -->
+            <div id="product-calc-section" class="mb-8 bg-gradient-to-br from-white via-blue-50/40 to-emerald-50/30 rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 relative overflow-hidden transition-all duration-300">
+                <!-- Top Rainbow Accent Line -->
+                <div class="h-1 bg-soma-gradient absolute top-0 left-0 right-0"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Left: Intro & Form Inputs -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold">
+                            <i class="fa-solid fa-calculator text-amber-500"></i>
+                            <span>TÍNH NĂNG ĐỘC QUYỀN SOMA MICOLL</span>
+                        </div>
+                        
+                        <div>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2.5">
+                                <span>Công Cụ Dự Toán Lượng Sơn & Vật Tư Thi Công Nhanh</span>
+                            </h2>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                Nhập diện tích tường để hệ thống tự động bóc tách chuẩn xác số lượng thùng sơn lót, sơn phủ MICOLL và can phụ gia chống thấm.
+                            </p>
+                        </div>
+
+                        <!-- Inputs Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                                    Diện tích bề mặt tường (m²):
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="prod-calc-area" value="100" min="10" max="5000" oninput="calculateProductSupplies()" class="w-full pl-4 pr-12 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-soma-600 font-black text-slate-900 text-base bg-white shadow-sm">
+                                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400">m²</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                                    Hạng mục thi công:
+                                </label>
+                                <select id="prod-calc-type" onchange="calculateProductSupplies()" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-soma-600 text-xs sm:text-sm font-semibold bg-white text-slate-800 shadow-sm">
+                                    <option value="exterior">Sơn ngoại thất chống thấm (Lót kiềm + Phủ Nano Guard)</option>
+                                    <option value="interior">Sơn nội thất cao cấp (Lót kiềm + Phủ Clean Pro)</option>
+                                    <option value="waterproof">Chống thấm sàn mái & tường đứng (Màng PU / Latex)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Quick Presets -->
+                        <div class="flex flex-wrap items-center gap-2 pt-1">
+                            <span class="text-xs text-slate-500 font-medium">Chọn nhanh:</span>
+                            <button type="button" onclick="setCalcPreset(60)" class="px-3 py-1 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition shadow-2xs">60 m² (Nhà phố)</button>
+                            <button type="button" onclick="setCalcPreset(100)" class="px-3 py-1 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition shadow-2xs">100 m² (Chung cư)</button>
+                            <button type="button" onclick="setCalcPreset(200)" class="px-3 py-1 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition shadow-2xs">200 m² (Nhà vườn)</button>
+                            <button type="button" onclick="setCalcPreset(350)" class="px-3 py-1 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition shadow-2xs">350 m² (Biệt thự)</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results Card with 1-click Action -->
+                    <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-md space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Dự toán vật tư ước tính</span>
+                            <span id="prod-calc-summary-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">Cho diện tích: 100 m²</span>
+                        </div>
+
+                        <!-- Estimated Items -->
+                        <div class="space-y-2.5 text-xs sm:text-sm">
+                            <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">1</span>
+                                    <span class="text-slate-700 font-medium">Sơn lót kháng kiềm MICOLL Alkali:</span>
+                                </div>
+                                <strong id="res-lot-qty" class="text-slate-900 font-black text-sm">~1 Thùng 18L</strong>
+                            </div>
+
+                            <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">2</span>
+                                    <span id="res-phu-name" class="text-slate-700 font-medium">Sơn phủ ngoại thất Nano Guard:</span>
+                                </div>
+                                <strong id="res-phu-qty" class="text-slate-900 font-black text-sm">~2 Thùng 18L</strong>
+                            </div>
+
+                            <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-md bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold">3</span>
+                                    <span class="text-slate-700 font-medium">Phụ gia MICOLL Latex chống thấm:</span>
+                                </div>
+                                <strong id="res-latex-qty" class="text-slate-900 font-black text-sm">~2 Can 5KG</strong>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="pt-2">
+                            <button onclick="addSuppliesPackageToCart()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-soma-700 to-blue-600 hover:from-soma-800 hover:to-blue-700 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span>Thêm trọn gói vật tư vào giỏ hàng</span>
+                            </button>
+                        </div>
+                        <div class="text-[11px] text-slate-400 italic text-center">
+                            * Định mức bóc tách theo quy chuẩn kỹ thuật chính hãng SOMA MICOLL
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- SIDEBAR FILTERS (Matching Image 6 Left Panel) -->
+                <aside class="lg:col-span-3 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                        
+                        <!-- Filter 1: Categories -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                DANH MỤC
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li>
+                                    <button onclick="filterCatalogCategory('all', this)" class="catalog-cat-btn w-full text-left py-1.5 font-bold text-soma-700 flex items-center justify-between">
+                                        <span>Tất cả sản phẩm</span>
+                                        <span class="text-xs bg-soma-100 px-2 py-0.5 rounded-full text-soma-800" id="count-all">6</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('ngoai-that', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Sơn ngoại thất</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">2</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('noi-that', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Sơn nội thất</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">2</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('phu-gia', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Phụ gia chống thấm</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('chuyen-dung', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Chống thấm chuyên dụng</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">1</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Filter 2: Price Ranges (Matching Image 6 checkboxes) -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                GIÁ SẢN PHẨM
+                            </h3>
+                            <div class="space-y-2.5 text-sm">
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="under-500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">Dưới 500.000 VNĐ</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="500k-1500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">500.000 - 1.500.000 VNĐ</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="above-1500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">Trên 1.500.000 VNĐ</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Filter 3: Status Tags (Matching Image 6 Status Buttons) -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                TRẠNG THÁI
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="toggleTagFilter(this, 'featured')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Nổi Bật
+                                </button>
+                                <button onclick="toggleTagFilter(this, 'sale')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Giảm giá
+                                </button>
+                                <button onclick="toggleTagFilter(this, 'instock')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Còn hàng
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Reset Filter Button (Matching Image 6 "Đặt lại" button) -->
+                        <div>
+                            <button onclick="resetAllFilters()" class="w-full py-2.5 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm transition shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-rotate-left text-xs"></i>
+                                <span>Đặt lại bộ lọc</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <!-- MAIN PRODUCT GRID (Matching Image 6 Right Grid) -->
+                <section class="lg:col-span-9 space-y-6">
+                    
+                    <!-- Top Bar: Results Count & Sort Dropdown -->
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-4">
+                        <div class="text-sm text-slate-600">
+                            Hiển thị: <strong class="text-slate-900" id="showing-count">6</strong> sản phẩm
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-slate-500 font-medium">Sắp xếp:</span>
+                            <select id="sort-select" onchange="applyFilters()" class="text-sm bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-soma-500 font-semibold text-slate-700">
+                                <option value="default">Mặc định</option>
+                                <option value="price-asc">Giá: Thấp đến Cao</option>
+                                <option value="price-desc">Giá: Cao đến Thấp</option>
+                                <option value="name-asc">Tên A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid Container -->
+                    <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Dynamic Catalog Products via JS -->
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: TRANG CHI TIẾT SẢN PHẨM (PRODUCT DETAIL VIEW - Matching Image 7) -->
+    <!-- ========================================================================= -->
+    <main id="view-product-detail" class="view-section flex-grow hidden bg-slate-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-soma-700" id="detail-breadcrumb-cat">Sơn ngoại thất</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-900 font-bold" id="detail-breadcrumb-name">Chi tiết sản phẩm</span>
+            </nav>
+
+            <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+                    
+                    <!-- Left: Main Image + Thumbnail Switcher (Matching Image 7 Left Side) -->
+                    <div class="lg:col-span-6 space-y-4">
+                        <!-- Main Product Display Box -->
+                        <div class="relative rounded-2xl border border-slate-200 bg-slate-50 p-6 flex items-center justify-center min-h-[380px] sm:min-h-[440px] overflow-hidden group">
+                            <!-- Brand Stamp Badge (Matching Image 7 Top Left Brand Tag) -->
+                            <div class="absolute top-4 left-4 bg-soma-800 text-white text-xs font-black px-3 py-1 rounded-md uppercase tracking-wider shadow">
+                                SOMA PAINT
+                            </div>
+                            
+                            <!-- Main Image -->
+                            <img id="detail-main-image" src="images/soma-ext-paint.png" alt="Sơn SOMA" class="max-h-[360px] w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+
+                            <!-- Expand View Icon -->
+                            <button onclick="previewImageModal()" class="absolute bottom-4 left-4 w-9 h-9 rounded-lg bg-white/90 shadow border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-soma-700 hover:text-white transition">
+                                <i class="fa-solid fa-expand text-sm"></i>
+                            </button>
+                        </div>
+
+                        <!-- Thumbnail Gallery -->
+                        <div class="grid grid-cols-4 gap-3" id="detail-thumbnails">
+                            <!-- Thumbnail buttons -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Product Information & Specs (Matching Image 7 Right Side) -->
+                    <div class="lg:col-span-6 space-y-6">
+                        
+                        <!-- Title & Meta -->
+                        <div>
+                            <h1 id="detail-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                                Sơn Ngoại Thất Siêu Bóng Chống Thấm SOMA Nano Guard - 18L
+                            </h1>
+
+                            <div class="flex flex-wrap items-center gap-4 mt-3 text-sm">
+                                <!-- Star Rating -->
+                                <div class="flex items-center text-yellow-400 gap-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-slate-500">Mã sản phẩm: <strong id="detail-code" class="text-slate-800">SOMA-EXT-023</strong></span>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-emerald-600 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i>Còn hàng</span>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Section -->
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex items-baseline gap-4">
+                            <span class="text-sm font-semibold text-slate-500">Giá bán:</span>
+                            <span id="detail-price" class="text-2xl sm:text-3xl font-black text-soma-800">1.850.000 VNĐ</span>
+                            <span id="detail-old-price" class="text-base text-slate-400 line-through">2.300.000 VNĐ</span>
+                            <span id="detail-discount-badge" class="ml-auto bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-full">-20%</span>
+                        </div>
+
+                        <!-- Quantity Selector & Actions (Matching Image 7 Buttons) -->
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-4">
+                                <span class="text-sm font-semibold text-slate-700">Số lượng:</span>
+                                <div class="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-sm">
+                                    <button onclick="changeDetailQty(-1)" class="w-10 h-10 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition font-bold text-lg">-</button>
+                                    <input type="number" id="detail-qty" value="1" min="1" class="w-14 text-center font-bold text-slate-900 border-x border-slate-300 focus:outline-none py-1">
+                                    <button onclick="changeDetailQty(1)" class="w-10 h-10 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition font-bold text-lg">+</button>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                                <button onclick="addToCartFromDetail()" class="py-3.5 px-6 rounded-xl bg-soma-900 hover:bg-navy-950 text-white font-bold text-sm tracking-wide shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>THÊM GIỎ HÀNG</span>
+                                </button>
+                                <button onclick="buyNowFromDetail()" class="py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-sm tracking-wide shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-bolt text-yellow-400"></i>
+                                    <span>THANH TOÁN NGAY</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Technical Specification Table (Matching Image 7 Table Exactly) -->
+                        <div class="pt-4 border-t border-slate-200">
+                            <h3 class="text-base font-extrabold text-slate-900 mb-3 flex items-center justify-between">
+                                <span>Mô tả & Thông số kỹ thuật</span>
+                                <i class="fa-solid fa-minus text-xs text-slate-400"></i>
+                            </h3>
+
+                            <div class="overflow-x-auto rounded-xl border border-slate-200">
+                                <table class="w-full text-xs sm:text-sm text-left">
+                                    <tbody class="divide-y divide-slate-200" id="detail-specs-table">
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700 w-1/3">Thương hiệu</td>
+                                            <td class="px-4 py-2.5 text-slate-900 font-semibold">MICOLL (Sản xuất bởi SOMA)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Dung tích / Quy cách</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-size">18 Lít / Thùng</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Độ phủ lý thuyết</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-coverage">11 - 13 m²/Lít/Lớp</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Tiêu chuẩn chất lượng</td>
+                                            <td class="px-4 py-2.5 text-slate-900">TCCS 01:2026/SOMA - ISO 9001:2015</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Thời gian khô</td>
+                                            <td class="px-4 py-2.5 text-slate-900">Khô bề mặt 30 phút, sơn lớp 2 sau 2 giờ</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Xuất xứ</td>
+                                            <td class="px-4 py-2.5 text-slate-900">Việt Nam (Tiêu chuẩn ISO 9001:2015)</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Khuyến cáo thi công</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-warning">Khuấy đều trước khi sử dụng. Thi công khi độ ẩm tường &lt; 16%.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: TRANG DỰ ÁN & CÔNG TRÌNH (PROJECTS VIEW - Công trình tin dùng SOMA) -->
+    <!-- ========================================================================= -->
+    <main id="view-projects" class="view-section flex-grow hidden bg-slate-50 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700 font-medium transition">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></span>
+                <span class="text-slate-900 font-bold">Dự án & Công trình tiêu biểu</span>
+            </nav>
+
+            <!-- Page Title Header -->
+            <div class="mb-8">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-city"></i> Hồ sơ năng lực thực tế
+                </div>
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 uppercase tracking-tight">
+                    CÔNG TRÌNH TIN TƯỞNG SỬ DỤNG SẢN PHẨM SOMA
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-3xl">
+                    Hơn 500+ dự án biệt thự cao cấp, khu đô thị, resort ven biển và tổ hợp nhà xưởng công nghiệp đã lựa chọn các dòng sơn màng bóng MICOLL và giải pháp chống thấm SOMA để bảo vệ vẻ đẹp trường tồn cùng thời gian.
+                </p>
+            </div>
+
+            <!-- Trust Stats Bar (Chỉ số chất lượng SOMA) -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-building-circle-check"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black text-slate-900 block tracking-tight">500+</span>
+                        <span class="text-xs text-slate-500 font-semibold">Công trình hoàn thành</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black text-slate-900 block tracking-tight">100%</span>
+                        <span class="text-xs text-slate-500 font-semibold">Kháng kiềm & Chống thấm</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black text-slate-900 block tracking-tight">15 Năm</span>
+                        <span class="text-xs text-slate-500 font-semibold">Bền màu màng sơn</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black text-slate-900 block tracking-tight">50+</span>
+                        <span class="text-xs text-slate-500 font-semibold">Nhà thầu chiến lược (TCCM...)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+                <button onclick="filterProjects('all')" id="pfilter-all" class="project-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-soma-800 text-white shadow-sm transition whitespace-nowrap">
+                    <i class="fa-solid fa-layer-group mr-1.5"></i> Tất cả công trình (6)
+                </button>
+                <button onclick="filterProjects('villa')" id="pfilter-villa" class="project-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-soma-800 border border-slate-200 hover:border-soma-300 shadow-xs transition whitespace-nowrap">
+                    <i class="fa-solid fa-house-chimney mr-1.5 text-emerald-600"></i> Biệt thự & Dinh thự
+                </button>
+                <button onclick="filterProjects('urban')" id="pfilter-urban" class="project-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-soma-800 border border-slate-200 hover:border-soma-300 shadow-xs transition whitespace-nowrap">
+                    <i class="fa-solid fa-building mr-1.5 text-blue-600"></i> Khu đô thị & Căn hộ
+                </button>
+                <button onclick="filterProjects('resort')" id="pfilter-resort" class="project-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-soma-800 border border-slate-200 hover:border-soma-300 shadow-xs transition whitespace-nowrap">
+                    <i class="fa-solid fa-umbrella-beach mr-1.5 text-amber-600"></i> Khách sạn & Resort biển
+                </button>
+                <button onclick="filterProjects('industrial')" id="pfilter-industrial" class="project-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-soma-800 border border-slate-200 hover:border-soma-300 shadow-xs transition whitespace-nowrap">
+                    <i class="fa-solid fa-industry mr-1.5 text-purple-600"></i> Công trình công nghiệp & Nhà xưởng
+                </button>
+            </div>
+
+            <!-- Projects Grid Container -->
+            <div id="projects-catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically rendered via renderProjects() -->
+            </div>
+
+            <!-- CONTRACTOR & ENGINEER TESTIMONIALS (Nhận xét của nhà thầu đối tác) -->
+            <div class="mt-16 bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-comments"></i> Góc nhìn chuyên gia
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Đánh giá từ Kỹ sư & Nhà thầu thi công
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-500 mt-2">
+                        Các kỹ sư chỉ huy trưởng công trình chia sẻ lý do lựa chọn SOMA và dòng sơn MICOLL làm đối tác vật tư hoàn thiện chiến lược.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Quote 1: TCCM Contractor -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-950 p-1 flex items-center justify-center shadow-md">
+                                    <img src="images/tccm-owl-white.png" alt="TCCM Owl Logo" class="w-9 h-9 object-contain">
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-900 text-sm">Nhà thầu TCCM Architecture</h4>
+                                    <p class="text-[11px] text-slate-500 font-medium">Chỉ huy trưởng dự án Biệt thự Vinhomes & Resort Hạ Long</p>
+                                </div>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+                                "Chúng tôi đã tin tưởng ứng dụng sơn MICOLL cho hơn 20 căn biệt thự cao cấp. Sơn có độ phủ cực dôi, màng sơn bóng dẻo đàn hồi, che lấp các vết nứt chân chim rất tốt. Đặc biệt khả năng kháng kiềm nồm ẩm miền Bắc của SOMA hoàn toàn vượt trội so với các dòng sơn cùng phân khúc."
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-emerald-700 font-bold">
+                            <span><i class="fa-solid fa-certificate mr-1"></i> Đối tác chiến lược 3+ năm</span>
+                            <span class="text-amber-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Quote 2: Coteccons / Industrial Partner -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shadow-xs">
+                                    <i class="fa-solid fa-building-wheat"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-900 text-sm">Ban Quản Lý Dự Án Grand Star Urban</h4>
+                                    <p class="text-[11px] text-slate-500 font-medium">Kỹ sư vật tư & Giám sát chất lượng công trình</p>
+                                </div>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+                                "Tiến độ cấp hàng của SOMA rất chuẩn chỉ. Các lô sơn đồng màu 100%, không bị lệch tone giữa các đợt giao. Dòng sơn nội thất không mùi giúp chúng tôi bàn giao căn hộ cho cư dân vào ở ngay mà không sợ tồn dư mùi hóa chất độc hại."
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs text-blue-700 font-bold">
+                            <span><i class="fa-solid fa-certificate mr-1"></i> Nghiệm thu hoàn thành 100%</span>
+                            <span class="text-amber-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA: Đăng ký tư vấn dự án & Chiết khấu nhà thầu -->
+            <div class="mt-12 bg-gradient-to-r from-soma-900 via-soma-800 to-blue-900 rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+                        <i class="fa-solid fa-phone-volume"></i> Dành Cho Chủ Đầu Tư & Nhà Thầu
+                    </span>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight">
+                        Bạn đang triển khai công trình hoặc chuẩn bị hoàn thiện nhà?
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Đội ngũ kỹ sư SOMA sẵn sàng đến tận chân công trình để đo đạc độ ẩm, tư vấn phương án kỹ thuật và gửi bảng chiết khấu dự án tốt nhất từ nhà máy.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0 w-full md:w-auto">
+                    <button onclick="navigateTo('contact')" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-soma-900 font-bold text-sm shadow-md transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-headset text-soma-700"></i>
+                        <span>Liên Hệ Kỹ Sư Dự Án</span>
+                    </button>
+                    <a href="https://zalo.me/0889166655" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Zalo (0889 166 655)</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: TRANG LIÊN HỆ (CONTACT VIEW - Tinh Gọn, Hợp Lý & Cân Đối) -->
+    <!-- ========================================================================= -->
+    <main id="view-contact" class="view-section flex-grow hidden bg-slate-50 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700 font-medium transition">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></span>
+                <span class="text-slate-900 font-bold">Liên hệ</span>
+            </nav>
+
+            <!-- Page Title Header -->
+            <div class="mb-8">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-soma-100 text-soma-800 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-headset text-soma-600"></i> Trung Tâm Tiếp Nhận & Hỗ Trợ Khách Hàng
+                </div>
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 uppercase tracking-tight">
+                    LIÊN HỆ VỚI CHÚNG TÔI
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base mt-1">
+                    Công ty SOMA luôn sẵn sàng giải đáp kỹ thuật, hỗ trợ đo đạc khảo sát và báo giá chiết khấu trực tiếp từ nhà máy.
+                </p>
+            </div>
+
+            <!-- Balanced 2-Column Grid (Equal Heights) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Left Column Card: GỬI YÊU CẦU TƯ VẤN & BÁO GIÁ -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                            <div>
+                                <h2 class="text-lg font-extrabold text-slate-900 uppercase tracking-wide">
+                                    GỬI YÊU CẦU TƯ VẤN & BÁO GIÁ
+                                </h2>
+                                <p class="text-xs text-slate-500 mt-0.5">Phản hồi trực tiếp trong vòng 15 phút</p>
+                            </div>
+                            <span class="w-10 h-10 rounded-2xl bg-soma-50 text-soma-700 flex items-center justify-center text-lg shadow-sm">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </span>
+                        </div>
+
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Họ và tên *</label>
+                                    <input type="text" required placeholder="Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Số điện thoại *</label>
+                                    <input type="tel" required placeholder="0912 xxx xxx" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Email</label>
+                                    <input type="email" placeholder="email@domain.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nhu cầu tư vấn</label>
+                                    <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition text-slate-700 truncate pr-8">
+                                        <option value="son-ngoai-that">Sơn ngoại thất cao cấp</option>
+                                        <option value="son-noi-that">Sơn nội thất lau chùi</option>
+                                        <option value="chong-tham">Chống thấm công nghệ Nano</option>
+                                        <option value="son-lot">Sơn lót kháng kiềm chuyên dụng</option>
+                                        <option value="dai-ly">Đăng ký mở Đại lý / Nhà thầu</option>
+                                        <option value="khac">Tư vấn dự án tổng thể</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Địa chỉ công trình / Diện tích (m²)</label>
+                                <input type="text" placeholder="Ví dụ: Biệt thự 350m² tại Đức Thắng, Bắc Từ Liêm..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nội dung chi tiết *</label>
+                                <textarea rows="3" required placeholder="Nhập các câu hỏi cần giải đáp hoặc yêu cầu báo giá..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50/70 focus:bg-white transition resize-none"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full py-3.5 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Gửi Yêu Cầu Tư Vấn</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Left Card Footer Highlights -->
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+                        <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
+                            <i class="fa-solid fa-circle-check text-emerald-500"></i> Khảo sát tận nơi miễn phí
+                        </span>
+                        <span class="flex items-center gap-1.5 text-blue-700 font-semibold">
+                            <i class="fa-solid fa-shield-halved text-blue-500"></i> Báo giá gốc từ nhà máy
+                        </span>
+                        <span class="flex items-center gap-1.5 text-amber-700 font-semibold">
+                            <i class="fa-solid fa-bolt text-amber-500"></i> Hỗ trợ kỹ thuật 24/7
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Column Card: ZALO QR AT TOP & COMPACT CONTACT INFO BELOW -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between h-full">
+                    
+                    <!-- TOP SECTION: PROMINENT ZALO QR CARD -->
+                    <div>
+                        <div class="bg-gradient-to-b from-blue-50/80 via-blue-50/40 to-slate-50 border border-blue-100/80 rounded-2xl p-5 text-center shadow-sm">
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600 text-white text-[11px] font-extrabold uppercase tracking-wider mb-2.5 shadow-sm">
+                                <i class="fa-solid fa-qrcode"></i> KẾT NỐI QUA ZALO CHÍNH THỨC
+                            </div>
+                            <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+                                Quét Mã Zalo Nhận Tư Vấn & Báo Giá
+                            </h2>
+                            <p class="text-xs text-slate-600 mt-1 max-w-sm mx-auto">
+                                Chat trực tiếp với kỹ sư & phụ trách kinh doanh SOMA để nhận bảng màu, catalogue và chiết khấu nhà máy.
+                            </p>
+
+                            <!-- Prominent Zalo QR Image (High Contrast, Easy to Scan) -->
+                            <div class="mt-3.5 inline-block bg-white p-2 rounded-2xl border border-blue-200 shadow-md hover:shadow-lg transition">
+                                <img src="images/zalo-qr.png" alt="Mã QR Zalo SOMA" class="w-48 sm:w-52 h-auto mx-auto rounded-xl object-contain">
+                            </div>
+
+                            <!-- Action Button -->
+                            <div class="mt-3.5">
+                                <a href="https://zalo.me/0889166655" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition w-full sm:w-auto">
+                                    <i class="fa-solid fa-comments text-base"></i>
+                                    <span>Mở Chat Zalo (0889 166 655)</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- BOTTOM SECTION: COMPACT COMPANY INFO (Nhỏ hơn) -->
+                        <div class="mt-5 pt-4 border-t border-slate-100 space-y-2.5">
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-building text-soma-700"></i> Thông Tin Doanh Nghiệp & Trụ Sở
+                                </h3>
+                                <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Hỗ trợ 24/7
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 sm:col-span-2 flex items-start gap-2.5">
+                                    <i class="fa-solid fa-location-dot text-blue-600 mt-0.5 text-sm flex-shrink-0"></i>
+                                    <div class="leading-snug">
+                                        <strong class="text-slate-800 block text-[11px] uppercase tracking-wide">Trụ sở & Văn phòng:</strong>
+                                        <span class="text-slate-600">Ô số 140, TT Kiến trúc Thăng Long, P. Đức Thắng, Q. Bắc Từ Liêm, Hà Nội</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-phone text-rose-600 text-sm flex-shrink-0"></i>
+                                    <div>
+                                        <strong class="text-slate-800 block text-[11px] uppercase tracking-wide">Hotline:</strong>
+                                        <a href="tel:0889166655" class="text-rose-600 font-bold hover:underline">0889 166 655</a>
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-envelope text-purple-600 text-sm flex-shrink-0"></i>
+                                    <div class="truncate">
+                                        <strong class="text-slate-800 block text-[11px] uppercase tracking-wide">Email:</strong>
+                                        <a href="mailto:contactsomajsc@gmail.com" class="text-slate-700 hover:text-soma-600 font-medium truncate block">contactsomajsc@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-clock text-emerald-600 text-sm flex-shrink-0"></i>
+                                    <div>
+                                        <strong class="text-slate-800 block text-[11px] uppercase tracking-wide">Giờ làm việc:</strong>
+                                        <span>T2 - T7: 08:00 - 18:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2.5">
+                                    <i class="fa-brands fa-facebook text-[#0084FF] text-sm flex-shrink-0"></i>
+                                    <div class="truncate">
+                                        <strong class="text-slate-800 block text-[11px] uppercase tracking-wide">Fanpage:</strong>
+                                        <a href="https://www.facebook.com/somajsc" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline truncate">somajsc</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Card Footer Note -->
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                        <span class="text-slate-600 font-medium">CÔNG TY CỔ PHẦN TM & SX SOMA</span>
+                        <span class="text-soma-700 font-bold">MICOLL VIỆT NAM</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GOOGLE MAPS EMBED -->
+            <div class="mt-8 bg-white p-4 sm:p-6 rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="flex items-center justify-between mb-3 px-1">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-soma-600 text-lg"></i>
+                        <h3 class="font-extrabold text-slate-900 text-sm uppercase tracking-wide">Bản đồ vị trí văn phòng SOMA</h3>
+                    </div>
+                    <span class="text-xs text-slate-500 font-medium">Đức Thắng, Bắc Từ Liêm, Hà Nội</span>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-72 sm:h-80 w-full border border-slate-100">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.473663213038!2d105.7766!3d21.0717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab29a9749137%3A0x6b0a1d4715f2136e!2zxJDhu6ljIFRo4bqvbmcsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- ========================================================================= -->
+    <!-- FOOTER (Matching Image 5 Footer with SOMA Blue / Slate Grey Palette) -->
+    <!-- ========================================================================= -->
+    <footer class="bg-navy-950 text-slate-300 pt-14 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Top Footer Bar -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-slate-800">
+                <!-- SOMA Official White Master Logo -->
+                <div class="flex items-center gap-3">
+                    <img src="images/soma-logo-white.png" alt="SOMA - SƠN CẢ BẦU TRỜI" class="h-12 sm:h-14 max-h-[60px] w-auto object-contain">
+                    <div class="border-l border-slate-700 pl-3">
+                        <span class="text-xs font-bold text-white block">CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT SOMA</span>
+                        <span class="text-[10px] text-slate-400">Nhà sản xuất & phân phối thương hiệu sơn MICOLL</span>
+                    </div>
+                </div>
+
+                <!-- Feedback Button & Facebook -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <a href="https://www.facebook.com/somajsc" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-[#0084FF] hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition flex items-center gap-2 shadow">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Fanpage SOMA</span>
+                    </a>
+                    <button onclick="navigateTo('contact')" class="px-5 py-2.5 rounded-full border border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white font-bold text-xs uppercase tracking-wider transition">
+                        Góp ý từ bạn
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4 Columns Footer (Matching Image 5 4-column layout) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10 text-sm">
+                
+                <!-- Column 1: THÔNG TIN LIÊN HỆ -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        THÔNG TIN LIÊN HỆ
+                    </h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-slate-300">Địa chỉ:</strong> Ô số 140, Tập thể Kiến trúc Thăng Long, Bắc Từ Liêm, Hà Nội
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Hotline:</strong> 0889 166 655
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Phản ánh chất lượng:</strong> 0889 166 655
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Email:</strong> <a href="mailto:contactsomajsc@gmail.com" class="hover:text-white transition">contactsomajsc@gmail.com</a>
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Facebook:</strong> <a href="https://www.facebook.com/somajsc" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">facebook.com/somajsc</a>
+                    </p>
+                </div>
+
+                <!-- Column 2: HỆ THỐNG CỬA HÀNG -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        HỆ THỐNG PHÂN PHỐI
+                    </h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Văn phòng Hà Nội:</strong>
+                        Ô 140 Tập thể Kiến trúc Thăng Long, Bắc Từ Liêm, TP. Hà Nội
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Chi nhánh Hải Phòng:</strong>
+                        Số 3/6/455 Đằng Hải, Quận Hải An, TP. Hải Phòng
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Chi nhánh TP. HCM:</strong>
+                        Quận Tân Bình, Thành phố Hồ Chí Minh
+                    </p>
+                </div>
+
+                <!-- Column 3: VỀ CHÚNG TÔI -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        VỀ CHÚNG TÔI
+                    </h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-white transition">Câu chuyện SOMA</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('projects')" class="hover:text-white transition font-bold text-emerald-400"><i class="fa-solid fa-city mr-1"></i> Dự án & Công trình tiêu biểu</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-white transition">Hồ sơ năng lực sản xuất</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-white transition">Chứng nhận kiểm định chất lượng</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('contact')" class="hover:text-white transition">Đăng ký mở đại lý phân phối</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: CHÍNH SÁCH KHÁCH HÀNG -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        CHÍNH SÁCH KHÁCH HÀNG
+                    </h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách kiểm hàng</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách đổi trả & bảo hành</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Hình thức thanh toán - Giao hàng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+                © 2026 CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT SOMA. Tất cả quyền được bảo lưu.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- PROJECT DETAIL MODAL (Xem chi tiết công trình thực tế) -->
+    <!-- ========================================================================= -->
+    <div id="project-detail-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-slate-950/80 backdrop-blur-sm p-4 sm:p-6 flex items-center justify-center">
+        <div class="relative bg-white rounded-3xl max-w-3xl w-full shadow-2xl overflow-hidden border border-slate-200 transition-all my-8 animate-in fade-in zoom-in-95">
+            
+            <!-- Close Button -->
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center backdrop-blur-md transition shadow-md">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Project Hero Image -->
+            <div class="relative h-64 sm:h-80 bg-slate-900 overflow-hidden">
+                <img id="pmodal-img" src="" alt="Công trình SOMA" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/40 to-transparent"></div>
+                <div class="absolute bottom-4 left-6 right-6 text-white">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/90 text-white text-[11px] font-bold uppercase tracking-wider mb-2 shadow-xs">
+                        <i class="fa-solid fa-circle-check"></i> <span id="pmodal-status">Đã hoàn thiện & Bàn giao</span>
+                    </div>
+                    <h3 id="pmodal-title" class="text-xl sm:text-2xl font-black leading-tight text-white drop-shadow-sm"></h3>
+                    <p id="pmodal-location" class="text-xs sm:text-sm text-slate-300 mt-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-rose-400"></i> <span id="pmodal-location-text"></span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project Body Content -->
+            <div class="p-6 sm:p-8 space-y-6 max-h-[60vh] overflow-y-auto">
+                
+                <!-- Quick Specs Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 text-xs">
+                    <div>
+                        <span class="text-slate-400 font-bold block uppercase text-[10px]">Nhà thầu thi công:</span>
+                        <strong id="pmodal-contractor" class="text-slate-900 text-xs mt-0.5 block"></strong>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 font-bold block uppercase text-[10px]">Quy mô công trình:</span>
+                        <strong id="pmodal-scale" class="text-slate-900 text-xs mt-0.5 block"></strong>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 font-bold block uppercase text-[10px]">Thời gian thực hiện:</span>
+                        <strong id="pmodal-year" class="text-slate-900 text-xs mt-0.5 block"></strong>
+                    </div>
+                </div>
+
+                <!-- Products Applied Box -->
+                <div>
+                    <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider mb-2.5 flex items-center gap-2">
+                        <i class="fa-solid fa-cubes text-soma-700"></i> Sản phẩm sơn SOMA & MICOLL tin dùng:
+                    </h4>
+                    <div id="pmodal-products" class="flex flex-wrap gap-2">
+                        <!-- Badges rendered dynamically -->
+                    </div>
+                </div>
+
+                <!-- Project Description -->
+                <div>
+                    <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider mb-1.5">Giải pháp kỹ thuật & Ứng dụng:</h4>
+                    <p id="pmodal-desc" class="text-xs sm:text-sm text-slate-600 leading-relaxed"></p>
+                </div>
+
+                <!-- Contractor Quote -->
+                <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 flex items-start gap-3.5">
+                    <i class="fa-solid fa-quote-left text-indigo-500 text-xl mt-1 flex-shrink-0"></i>
+                    <div>
+                        <p id="pmodal-quote" class="text-xs sm:text-sm text-indigo-950 italic leading-relaxed"></p>
+                        <span class="text-[11px] text-indigo-700 font-bold block mt-1.5">— Đánh giá từ Ban Chỉ Huy Công Trình</span>
+                    </div>
+                </div>
+
+                <!-- Action CTA inside modal -->
+                <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div class="text-xs text-slate-500 text-center sm:text-left">
+                        Cần khảo sát & bóc tách dự toán tương tự? <strong class="text-emerald-700">Miễn phí 100%</strong>
+                    </div>
+                    <div class="flex items-center gap-2 w-full sm:w-auto">
+                        <button onclick="closeProjectModal(); navigateTo('contact')" class="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Báo Giá Dự Án</span>
+                        </button>
+                        <a href="https://zalo.me/0889166655" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-comments"></i>
+                            <span>Chat Zalo</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- SLIDE-OVER CART DRAWER & CHECKOUT -->
+    <!-- ========================================================================= -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="toggleCartDrawer()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                <!-- Header -->
+                <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+                    <h2 class="text-lg font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping text-soma-400"></i> Giỏ hàng của bạn
+                    </h2>
+                    <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div class="flex-grow p-6 overflow-y-auto space-y-4" id="cart-items-container">
+                    <!-- Injected via JS -->
+                </div>
+
+                <!-- Footer Summary & Order -->
+                <div class="p-6 border-t border-slate-200 bg-slate-50 space-y-4">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-slate-600">Tạm tính:</span>
+                        <strong id="cart-total-price" class="text-xl font-black text-soma-800">0 VNĐ</strong>
+                    </div>
+                    <button onclick="openCheckoutModal()" class="w-full py-3.5 rounded-xl bg-soma-700 hover:bg-soma-800 text-white font-bold text-sm tracking-wide shadow-md transition">
+                        TIẾN HÀNH ĐẶT HÀNG / BÁO GIÁ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- PAINT CALCULATOR MODAL -->
+    <!-- ========================================================================= -->
+    <div id="calculator-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm" onclick="closeCalculatorModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full p-6 sm:p-8">
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4 mb-4">
+                    <h3 class="text-lg font-black text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-soma-600"></i> BẢNG TÍNH LƯỢNG SƠN DỰ TOÁN
+                    </h3>
+                    <button onclick="closeCalculatorModal()" class="text-slate-400 hover:text-slate-700">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Diện tích tường cần sơn (m²):</label>
+                        <input type="number" id="calc-area" value="100" min="10" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-800 text-base">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Loại công trình:</label>
+                        <select id="calc-type" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-slate-800 font-medium">
+                            <option value="exterior">Sơn ngoại thất chống thấm (2 lớp lót + 2 lớp phủ)</option>
+                            <option value="interior">Sơn nội thất cao cấp (1 lớp lót + 2 lớp phủ)</option>
+                            <option value="waterproof">Chống thấm sàn / sàn mái (3 lớp CT-11A)</option>
+                        </select>
+                    </div>
+                    <button onclick="calculatePaint()" class="w-full py-3 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold transition">
+                        Tính toán ngay
+                    </button>
+
+                    <!-- Result Box -->
+                    <div id="calc-result" class="bg-soma-50 p-4 rounded-2xl border border-soma-200 mt-4 space-y-2 text-xs sm:text-sm">
+                        <div class="font-bold text-soma-900 border-b border-soma-200 pb-1">Dự toán vật tư ước tính (100 m²):</div>
+                        <div class="flex justify-between"><span>Sơn lót kháng kiềm:</span> <strong>~1 Thùng 18L</strong></div>
+                        <div class="flex justify-between"><span>Sơn phủ màu chống thấm:</span> <strong>~2 Thùng 18L</strong></div>
+                        <div class="flex justify-between"><span>Phụ gia MICOLL Latex:</span> <strong>~1 Can 5KG</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING CONTACT WIDGETS (Facebook Messenger somajsc + Zalo + Call) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Facebook Messenger Button with link https://www.facebook.com/somajsc -->
+        <a href="https://www.facebook.com/somajsc" target="_blank" rel="noopener noreferrer" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#0084FF] text-white shadow-xl hover:scale-110 transition flex items-center justify-center text-2xl font-bold group relative glow-soft-messenger" title="Nhắn tin Messenger Facebook SOMA">
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs px-2.5 py-1 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none font-medium">Chat Messenger SOMA</span>
+        </a>
+        <!-- Zalo Button -->
+        <a href="https://zalo.me/0889166655" target="_blank" rel="noopener noreferrer" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#0068FF] text-white shadow-xl hover:scale-110 transition flex items-center justify-center text-2xl font-bold group relative glow-soft-zalo" title="Chat Zalo">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs px-2.5 py-1 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none font-medium">Chat Zalo</span>
+        </a>
+        <!-- Call Button (Tắt nhảy nhảy, thay bằng hiệu ứng nháy sáng nhẹ) -->
+        <a href="tel:0889166655" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-red-500 to-rose-600 text-white shadow-xl hover:scale-110 transition flex items-center justify-center text-xl group relative glow-soft-phone" title="Gọi Hotline">
+            <i class="fa-solid fa-phone"></i>
+            <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs px-2.5 py-1 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none font-medium">Hotline: 0889 166 655</span>
+        </a>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- JAVASCRIPT APP LOGIC & DATA -->
+    <!-- ========================================================================= -->
+    <script>
+        // MASTER PRODUCTS DATA
+        const products = [
+            {
+                id: 1,
+                name: "Sơn Ngoại Thất Siêu Bóng Chống Thấm MICOLL Nano Guard - 18L",
+                brand: "MICOLL",
+                category: "ngoai-that",
+                categoryName: "Sơn ngoại thất",
+                code: "MICOLL-EXT-023",
+                price: 1850000,
+                oldPrice: 2300000,
+                discount: "-20%",
+                image: "images/soma-ext-paint.png",
+                thumbnails: [
+                    "images/soma-ext-paint.png",
+                    "images/soma-hq.jpg",
+                    "images/soma-sealer.png",
+                    "images/soma-int-paint.png"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "11 - 13 m²/Lít/Lớp",
+                warning: "Khuấy đều trước khi dùng. Thi công khi độ ẩm tường < 16%.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 2,
+                name: "Sơn Nội Thất Lau Chùi Hiệu Quả MICOLL Clean Pro - 18L",
+                brand: "MICOLL",
+                category: "noi-that",
+                categoryName: "Sơn nội thất",
+                code: "MICOLL-INT-018",
+                price: 1250000,
+                oldPrice: 1550000,
+                discount: "-19%",
+                image: "images/soma-int-paint.png",
+                thumbnails: [
+                    "images/soma-int-paint.png",
+                    "images/soma-sealer.png",
+                    "images/soma-ext-paint.png",
+                    "images/soma-hq.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "12 - 14 m²/Lít/Lớp",
+                warning: "Bề mặt cần sạch bụi bẩn và khô ráo hoàn toàn trước khi sơn.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 3,
+                name: "Phụ Gia Chống Thấm & Tác Nhân Kết Nối MICOLL Latex - 5KG",
+                brand: "MICOLL",
+                category: "phu-gia",
+                categoryName: "Phụ gia chống thấm",
+                code: "MICOLL-LATEX-05",
+                price: 420000,
+                oldPrice: 550000,
+                discount: "-24%",
+                image: "images/soma-latex.png",
+                thumbnails: [
+                    "images/soma-latex.png",
+                    "images/soma-proof-ultra.png",
+                    "images/soma-ext-paint.png",
+                    "images/soma-hq.jpg"
+                ],
+                size: "Can 5 KG",
+                coverage: "Trộn tỷ lệ 1L MICOLL Latex : 1L Nước : 4KG Xi măng",
+                warning: "Trộn đều với nước sạch trước khi cho vào hỗn hợp xi măng cát.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 4,
+                name: "Sơn Lót Kháng Kiềm Ngoại Thất Cao Cấp MICOLL Alkali Sealer - 18L",
+                brand: "MICOLL",
+                category: "ngoai-that",
+                categoryName: "Sơn ngoại thất",
+                code: "MICOLL-SEA-018",
+                price: 1450000,
+                oldPrice: 1750000,
+                discount: "-17%",
+                image: "images/soma-sealer.png",
+                thumbnails: [
+                    "images/soma-sealer.png",
+                    "images/soma-ext-paint.png",
+                    "images/soma-hq.jpg",
+                    "images/soma-int-paint.png"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "10 - 12 m²/Lít/Lớp",
+                warning: "Thi công 1-2 lớp lót trước khi sơn phủ màu hoàn thiện.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 5,
+                name: "Sơn Nội Thất Siêu Trắng Trần Cao Cấp MICOLL White - 18L",
+                brand: "MICOLL",
+                category: "noi-that",
+                categoryName: "Sơn nội thất",
+                code: "MICOLL-WHT-018",
+                price: 980000,
+                oldPrice: 1200000,
+                discount: "-18%",
+                image: "images/soma-int-paint.png",
+                thumbnails: [
+                    "images/soma-int-paint.png",
+                    "images/soma-sealer.png",
+                    "images/soma-ext-paint.png"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "11 - 13 m²/Lít/Lớp",
+                warning: "Dành riêng cho khu vực trần thạch cao và trần bê tông nội thất.",
+                featured: false,
+                rating: 4.8,
+                inStock: true
+            },
+            {
+                id: 6,
+                name: "Màng Chống Thấm Polyurethane Đa Năng MICOLL Proof Ultra - 18L",
+                brand: "MICOLL",
+                category: "chuyen-dung",
+                categoryName: "Chống thấm chuyên dụng",
+                code: "MICOLL-PU-018",
+                price: 2650000,
+                oldPrice: 3100000,
+                discount: "-15%",
+                image: "images/soma-proof-ultra.png",
+                thumbnails: [
+                    "images/soma-proof-ultra.png",
+                    "images/soma-latex.png",
+                    "images/soma-hq.jpg"
+                ],
+                size: "Thùng 18 Lít",
+                coverage: "1.2 - 1.5 kg/m² cho 2 lớp",
+                warning: "Bề mặt cần được làm sạch tuyệt đối, không đọng nước trước khi quét.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            }
+        ];
+
+        // CART STATE
+        let cart = [];
+        let currentSelectedProduct = products[0];
+
+        // MASTER PROJECTS & WORKS DATA (Công trình tin tưởng sử dụng sơn SOMA)
+        const projectsData = [
+            {
+                id: 1,
+                title: "Biệt thự Đơn lập Vinhomes Riverside",
+                location: "Khu Bằng Lăng, Vinhomes Riverside, Long Biên, Hà Nội",
+                category: "villa",
+                categoryLabel: "Biệt thự cao cấp",
+                contractor: "Nhà thầu TCCM Architecture & SOMA",
+                scale: "3 tầng nổi, sàn 450m² (Tường sơn: 1.200m²)",
+                year: "2024",
+                status: "Đã hoàn thiện & Bàn giao",
+                image: "images/project-villa-riverside.jpg",
+                products: [
+                    "Sơn ngoại thất MICOLL Ultra Shield bóng ngọc trai",
+                    "Sơn lót kháng kiềm chuyên dụng Nano Sealer",
+                    "Bột bả ngoại thất cao cấp SOMA Wall Putty"
+                ],
+                desc: "Công trình dinh thự phong cách tân cổ điển đòi hỏi chất lượng hoàn thiện bề mặt màng sơn hoàn mỹ. Hệ thống sơn MICOLL ngoại thất mang lại độ bóng ngọc trai tinh tế, khả năng tự làm sạch chống bám bụi và chống rêu mốc vượt trội trước khí hậu ẩm nồm đặc trưng của miền Bắc.",
+                quote: "Màng sơn MICOLL lên màu rất sâu, đanh chắc và bóng dẻo. Sau hơn 1 năm trải qua cả mùa mưa ẩm và nắng gắt, bề mặt tường vẫn sáng bóng nguyên bản như ngày đầu bàn giao."
+            },
+            {
+                id: 2,
+                title: "Tổ hợp Căn hộ Cao cấp Grand Star Urban",
+                location: "Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội",
+                category: "urban",
+                categoryLabel: "Khu đô thị & Căn hộ",
+                contractor: "Liên danh Tổng thầu TCCM & Coteccons",
+                scale: "2 tòa tháp 25 tầng (48.000m² bề mặt tường hoàn thiện)",
+                year: "2023 - 2024",
+                status: "Đã nghiệm thu đưa vào sử dụng",
+                image: "images/project-urban-tower.jpg",
+                products: [
+                    "Sơn nội thất mịn lau chùi MICOLL Satin",
+                    "Sơn chống thấm pha xi măng SOMA Proof Ultra",
+                    "Sơn lót kháng kiềm nội thất SOMA Primer"
+                ],
+                desc: "Dự án căn hộ quy mô lớn yêu cầu nghiêm ngặt về tiến độ cấp hàng và tiêu chuẩn an toàn sức khỏe cư dân. Dòng sơn nội thất MICOLL đạt chuẩn Low-VOC hoàn toàn không mùi khó chịu, kháng kiềm vượt trội giúp hạn chế tối đa bong tróc cho tòa nhà cao tầng.",
+                quote: "SOMA đáp ứng tiến độ giao hàng cực kỳ đúng cam kết cho hàng chục nghìn mét vuông tường. Độ phủ sơn rất dôi giúp tối ưu 12% chi phí nguyên vật liệu cho tổng thầu."
+            },
+            {
+                id: 3,
+                title: "Quần thể Biệt thự Nghỉ dưỡng Eco Retreat",
+                location: "Bãi Cháy, Vịnh Hạ Long, Quảng Ninh",
+                category: "resort",
+                categoryLabel: "Khách sạn & Resort biển",
+                contractor: "Nhà thầu Hoàn thiện TCCM & Đối tác thi công",
+                scale: "35 căn villa nghỉ dưỡng mặt biển & Clubhouse trung tâm",
+                year: "2024",
+                status: "Đã hoàn thiện & Vận hành",
+                image: "images/project-halong-resort.jpg",
+                products: [
+                    "Sơn chống thấm siêu co giãn đàn hồi SOMA Proof Ultra",
+                    "Sơn ngoại thất cao cấp MICOLL kháng muối kiềm biển",
+                    "Sơn lót kháng kiềm chuyên sâu vùng duyên hải"
+                ],
+                desc: "Với vị trí trực diện vịnh biển, công trình phải chịu nồng độ hơi muối mặn cao và gió biển liên tục. SOMA đã cung cấp hệ thống màng sơn siêu co giãn chống thấm đàn hồi 300%, tạo lớp khiên chắn ngăn chặn hoàn toàn muối ăn mòn và nứt nẻ chân chim.",
+                quote: "Điều kiện sương muối ven biển Hạ Long là thử thách cực đại cho mọi hãng sơn. Giải pháp sơn lót kháng muối và màng phủ MICOLL đã thuyết phục hoàn toàn ban quản lý dự án."
+            },
+            {
+                id: 4,
+                title: "Tổ hợp Nhà máy Chế biến & Kho vận Logistics VSIP",
+                location: "Khu công nghiệp VSIP, Thủy Nguyên, TP. Hải Phòng",
+                category: "industrial",
+                categoryLabel: "Công trình công nghiệp",
+                contractor: "Tổng thầu Hòa Bình & Đơn vị kỹ thuật SOMA",
+                scale: "Nhà xưởng sản xuất 25.000m² sàn + Hệ thống tường ngoài 16.000m²",
+                year: "2023",
+                status: "Đã vận hành sản xuất",
+                image: "images/project-vsip-factory.jpg",
+                products: [
+                    "Sơn sàn Epoxy công nghiệp SOMA Heavy Duty",
+                    "Sơn ngoại thất chống bám bụi và chống nóng mái tôn SOMA Cool",
+                    "Sơn chống gỉ kết cấu kim loại cao cấp"
+                ],
+                desc: "Khu tổ hợp công nghiệp đạt chuẩn quốc tế yêu cầu sàn nhà xưởng chịu tải xe nâng 10 tấn, kháng hóa chất tẩy rửa công nghiệp và bề mặt tường chống rêu mốc, chống bám bụi bẩn dài lâu.",
+                quote: "Sàn epoxy SOMA phẳng mịn, độ cứng cao và bám dính tuyệt vời trên bề mặt bê tông công nghiệp. Chế độ bảo hành kỹ thuật 5 năm khiến chúng tôi rất yên tâm."
+            },
+            {
+                id: 5,
+                title: "Dinh thự Đồi Thông Hillside Manor",
+                location: "Khu nghỉ dưỡng đồi thông, Thị trấn Tam Đảo, Vĩnh Phúc",
+                category: "villa",
+                categoryLabel: "Biệt thự cao cấp",
+                contractor: "TCCM Architecture & Build",
+                scale: "Dinh thự nghỉ dưỡng 3 tầng, diện tích sàn 600m²",
+                year: "2024",
+                status: "Đã hoàn thiện & Bàn giao",
+                image: "images/project-hillside-mansion.jpg",
+                products: [
+                    "Sơn nội & ngoại thất MICOLL Nano Bạc kháng khuẩn chống mốc",
+                    "Sơn lót kháng kiềm chống ố vàng đặc trị",
+                    "Hợp chất chống thấm đàn hồi cao SOMA Proof"
+                ],
+                desc: "Khí hậu Tam Đảo có độ ẩm không khí thường xuyên trên 90% kèm sương mù dày đặc quanh năm, rất dễ gây rêu phong và ố vàng màng sơn. Sơn MICOLL với công nghệ Nano Bạc đã loại trừ hoàn toàn ẩm mốc và giữ màu tường sắc nét.",
+                quote: "Ở vùng sương mù Tam Đảo, nếu không dùng sơn chuyên dụng thì chỉ sau 3 tháng tường sẽ mọc rêu xanh. Sơn MICOLL đã chứng minh khả năng kháng ẩm mốc đỉnh cao."
+            },
+            {
+                id: 6,
+                title: "Khách sạn Boutique Seaside Serenity",
+                location: "Đại lộ Hoàng Sa, Bán đảo Sơn Trà, TP. Đà Nẵng",
+                category: "resort",
+                categoryLabel: "Khách sạn & Resort biển",
+                contractor: "Vinaconex Miền Trung & Nhà thầu TCCM",
+                scale: "Khách sạn boutique 7 tầng, 45 phòng cao cấp view biển",
+                year: "2024",
+                status: "Đã khai trương đón khách",
+                image: "images/project-danang-hotel.jpg",
+                products: [
+                    "Sơn ngoại thất MICOLL Sun-Reflect kháng tia cực tím UV",
+                    "Sơn nội thất lau chùi vết bẩn vượt trội MICOLL Easy Clean",
+                    "Sơn lót chống kiềm đa năng SOMA Primer"
+                ],
+                desc: "Mặt tiền khách sạn đón nắng gắt trực tiếp của miền Trung và gió biển Đông. Sơn ngoại thất MICOLL phản xạ nhiệt, giúp hạ nhiệt độ bề mặt tường từ 3-5°C và giữ độ bền màu sắc tươi sáng lâu năm.",
+                quote: "Du khách rất ấn tượng với vẻ đẹp sang trọng, bóng sáng của khách sạn. Tường nội thất lau chùi vết bẩn của khách chỉ với khăn ẩm rất dễ dàng."
+            }
+        ];
+
+        // Render Projects Catalog
+        function renderProjects(filter = 'all') {
+            const container = document.getElementById('projects-catalog-grid');
+            if (!container) return;
+
+            const filtered = filter === 'all' 
+                ? projectsData 
+                : projectsData.filter(p => p.category === filter);
+
+            container.innerHTML = filtered.map(item => `
+                <div class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group">
+                    <div class="relative h-60 overflow-hidden bg-slate-100 cursor-pointer" onclick="openProjectModal(${item.id})">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold text-soma-800 border border-slate-200 shadow-xs flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span>${item.categoryLabel}</span>
+                        </div>
+                        <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-lg text-xs font-medium text-white flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-rose-400"></i>
+                            <span class="line-clamp-1">${item.location.split(',').slice(-2).join(',').trim()}</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-indigo-600 font-bold uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-halved"></i> ${item.contractor}
+                                </span>
+                                <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                                    ${item.year}
+                                </span>
+                            </div>
+
+                            <h3 class="font-black text-slate-900 text-lg group-hover:text-soma-700 transition cursor-pointer leading-snug" onclick="openProjectModal(${item.id})">
+                                ${item.title}
+                            </h3>
+
+                            <p class="text-xs text-slate-600 leading-relaxed line-clamp-2">
+                                ${item.desc}
+                            </p>
+
+                            <!-- Products Used Badges -->
+                            <div class="pt-2">
+                                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Sơn SOMA tin dùng:</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${item.products.slice(0, 2).map(p => `
+                                        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[11px] font-medium border border-slate-200">
+                                            <i class="fa-solid fa-cube text-[9px] text-soma-600"></i> ${p.split('-')[0].trim()}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <button onclick="openProjectModal(${item.id})" class="text-xs font-extrabold text-soma-800 hover:text-soma-900 inline-flex items-center gap-1.5 group/btn">
+                                <span>Xem hồ sơ công trình</span>
+                                <i class="fa-solid fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                            </button>
+                            <span class="text-[11px] text-slate-400 font-medium">${item.status}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter Projects by Category
+        function filterProjects(category) {
+            document.querySelectorAll('.project-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-soma-800', 'text-white', 'font-bold');
+                btn.classList.add('bg-white', 'text-slate-700', 'font-semibold', 'border', 'border-slate-200');
+            });
+
+            const activeBtn = document.getElementById('pfilter-' + category);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-700', 'font-semibold', 'border-slate-200');
+                activeBtn.classList.add('bg-soma-800', 'text-white', 'font-bold');
+            }
+
+            renderProjects(category);
+        }
+
+        // Project Modal Controller
+        function openProjectModal(projectId) {
+            const project = projectsData.find(p => p.id === projectId);
+            if (!project) return;
+
+            document.getElementById('pmodal-img').src = project.image;
+            document.getElementById('pmodal-status').innerText = project.status;
+            document.getElementById('pmodal-title').innerText = project.title;
+            document.getElementById('pmodal-location-text').innerText = project.location;
+            document.getElementById('pmodal-contractor').innerText = project.contractor;
+            document.getElementById('pmodal-scale').innerText = project.scale;
+            document.getElementById('pmodal-year').innerText = project.year;
+            document.getElementById('pmodal-desc').innerText = project.desc;
+            document.getElementById('pmodal-quote').innerText = `"${project.quote}"`;
+
+            const prodContainer = document.getElementById('pmodal-products');
+            prodContainer.innerHTML = project.products.map(p => `
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-blue-50 text-blue-900 border border-blue-200 text-xs font-semibold">
+                    <i class="fa-solid fa-check text-blue-600 text-xs"></i> ${p}
+                </span>
+            `).join('');
+
+            const modal = document.getElementById('project-detail-modal');
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-detail-modal');
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+        
+        // Open Product Calculator (Navigates directly to Products page and scrolls to Calculator)
+        function openProductCalculator() {
+            navigateTo('products');
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                el.classList.add('text-slate-600', 'font-semibold');
+            });
+            document.getElementById('nav-calc')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+            document.getElementById('nav-calc')?.classList.remove('text-slate-600');
+
+            setTimeout(() => {
+                const el = document.getElementById('product-calc-section');
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    el.classList.add('ring-4', 'ring-amber-400/50');
+                    setTimeout(() => el.classList.remove('ring-4', 'ring-amber-400/50'), 2200);
+                }
+            }, 120);
+        }
+
+        // Scroll to Partners Section
+        function scrollToPartners() {
+            navigateTo('home');
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                el.classList.add('text-slate-600', 'font-semibold');
+            });
+            document.getElementById('nav-partners')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+            document.getElementById('nav-partners')?.classList.remove('text-slate-600');
+
+            setTimeout(() => {
+                const el = document.getElementById('partners-section');
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    el.classList.add('ring-4', 'ring-purple-400/50');
+                    setTimeout(() => el.classList.remove('ring-4', 'ring-purple-400/50'), 2200);
+                }
+            }, 120);
+        }
+
+        // Interactive Supplies Calculator on Products View
+        function calculateProductSupplies() {
+            const areaInput = document.getElementById('prod-calc-area');
+            const typeInput = document.getElementById('prod-calc-type');
+            if (!areaInput || !typeInput) return;
+
+            let area = parseFloat(areaInput.value) || 0;
+            if (area <= 0) area = 100;
+
+            const type = typeInput.value;
+            let lot = 0;
+            let phu = 0;
+            let latex = 0;
+            let phuName = "Sơn phủ ngoại thất Nano Guard:";
+
+            if (type === 'exterior') {
+                lot = Math.ceil(area / 100);
+                phu = Math.ceil(area / 60);
+                latex = Math.ceil(area / 80);
+                phuName = "Sơn phủ ngoại thất MICOLL Nano Guard:";
+            } else if (type === 'interior') {
+                lot = Math.ceil(area / 110);
+                phu = Math.ceil(area / 65);
+                latex = Math.ceil(area / 120);
+                phuName = "Sơn phủ nội thất MICOLL Clean Pro:";
+            } else if (type === 'waterproof') {
+                lot = Math.ceil(area / 90);
+                phu = Math.ceil(area / 40);
+                latex = Math.ceil(area / 50);
+                phuName = "Màng chống thấm MICOLL Proof Ultra:";
+            }
+
+            const badge = document.getElementById('prod-calc-summary-badge');
+            if (badge) badge.innerText = `Cho diện tích: ${area} m²`;
+            const lotEl = document.getElementById('res-lot-qty');
+            if (lotEl) lotEl.innerText = `~${lot} Thùng 18L`;
+            const phuNameEl = document.getElementById('res-phu-name');
+            if (phuNameEl) phuNameEl.innerText = phuName;
+            const phuEl = document.getElementById('res-phu-qty');
+            if (phuEl) phuEl.innerText = `~${phu} Thùng 18L`;
+            const latexEl = document.getElementById('res-latex-qty');
+            if (latexEl) latexEl.innerText = `~${latex} Can 5KG`;
+        }
+
+        function setCalcPreset(val) {
+            const input = document.getElementById('prod-calc-area');
+            if (input) {
+                input.value = val;
+                calculateProductSupplies();
+            }
+        }
+
+        // Add 1-Click Supplies Package into Cart
+        function addSuppliesPackageToCart() {
+            const area = parseFloat(document.getElementById('prod-calc-area')?.value) || 100;
+            const type = document.getElementById('prod-calc-type')?.value || 'exterior';
+            
+            let lot = Math.ceil(area / 100);
+            let phu = Math.ceil(area / 60);
+            let latex = Math.ceil(area / 80);
+
+            let phuProdId = 1; // MICOLL Nano Guard
+            if (type === 'interior') {
+                phuProdId = 2; // Clean Pro
+                lot = Math.ceil(area / 110);
+                phu = Math.ceil(area / 65);
+                latex = Math.ceil(area / 120);
+            } else if (type === 'waterproof') {
+                phuProdId = 6; // Proof Ultra
+                lot = Math.ceil(area / 90);
+                phu = Math.ceil(area / 40);
+                latex = Math.ceil(area / 50);
+            }
+
+            const lotProd = products.find(p => p.id === 4); // Alkali Sealer
+            const phuProd = products.find(p => p.id === phuProdId);
+            const latexProd = products.find(p => p.id === 3); // Latex
+
+            if (lotProd) addToCartWithQty(lotProd.id, lot);
+            if (phuProd) addToCartWithQty(phuProd.id, phu);
+            if (latexProd) addToCartWithQty(latexProd.id, latex);
+
+            showToast(`Đã thêm trọn gói vật tư (${lot + phu + latex} sản phẩm) vào giỏ hàng!`);
+            toggleCartDrawer();
+        }
+
+        function addToCartWithQty(productId, quantity) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                existing.qty += quantity;
+            } else {
+                cart.push({ ...product, qty: quantity });
+            }
+            updateCartUI();
+        }
+
+        // Redirect openCalculatorModal to openProductCalculator
+        function openCalculatorModal() {
+            openProductCalculator();
+        }
+
+        // Format currency helper
+        function formatVND(amount) {
+            return new Intl.NumberFormat('vi-VN').format(amount) + ' VNĐ';
+        }
+
+        // SPA Navigation Manager (Handles 3 pages: home, products, contact + product-detail)
+        function navigateTo(viewName, productId = null) {
+            // Hide all sections
+            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
+
+            // Reset framed capsule navbar active styles
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                el.classList.add('text-slate-600', 'font-semibold');
+            });
+
+            // Show selected view
+            if (viewName === 'home') {
+                document.getElementById('view-home').classList.remove('hidden');
+                document.getElementById('nav-home')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                document.getElementById('nav-home')?.classList.remove('text-slate-600');
+            } else if (viewName === 'products') {
+                document.getElementById('view-products').classList.remove('hidden');
+                document.getElementById('nav-products')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                document.getElementById('nav-products')?.classList.remove('text-slate-600');
+                renderCatalog(products);
+                calculateProductSupplies();
+            } else if (viewName === 'projects') {
+                document.getElementById('view-projects').classList.remove('hidden');
+                document.getElementById('nav-projects')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                document.getElementById('nav-projects')?.classList.remove('text-slate-600');
+                renderProjects('all');
+            } else if (viewName === 'contact') {
+                document.getElementById('view-contact').classList.remove('hidden');
+                document.getElementById('nav-contact')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                document.getElementById('nav-contact')?.classList.remove('text-slate-600');
+            } else if (viewName === 'product-detail') {
+                document.getElementById('view-product-detail').classList.remove('hidden');
+                document.getElementById('nav-products')?.classList.add('bg-white', 'text-soma-900', 'shadow-sm', 'font-bold');
+                document.getElementById('nav-products')?.classList.remove('text-slate-600');
+                if (productId) {
+                    loadProductDetail(productId);
+                }
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Render Home Featured Products
+        function renderHomeProducts(items) {
+            const container = document.getElementById('home-products-grid');
+            if (!container) return;
+
+            container.innerHTML = items.slice(0, 4).map(item => `
+                <div class="group bg-white rounded-2xl border border-slate-200 hover:border-soma-300 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col">
+                    <div class="relative p-4 bg-gradient-to-b from-white to-slate-50/60 flex items-center justify-center min-h-[220px] overflow-hidden cursor-pointer" onclick="navigateTo('product-detail', ${item.id})">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-black px-2.5 py-0.5 rounded-md shadow-sm z-10">
+                            ${item.discount}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-gradient-to-r from-[#00B140] via-[#F59E0B] to-[#FF2E8E] text-slate-900 text-[10px] font-black px-2 py-0.5 rounded shadow-sm z-10">
+                            MICOLL
+                        </span>
+                        <img src="${item.image}" alt="${item.name}" class="h-44 w-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                    <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-sm hover:text-soma-700 transition cursor-pointer line-clamp-2" onclick="navigateTo('product-detail', ${item.id})">
+                                ${item.name}
+                            </h3>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-baseline justify-between">
+                                <span class="text-base font-black text-slate-900">${formatVND(item.price)}</span>
+                                <span class="text-xs text-slate-400 line-through">${formatVND(item.oldPrice)}</span>
+                            </div>
+
+                            <button onclick="addToCart(${item.id})" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-soma-700 hover:bg-soma-700 text-slate-700 hover:text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span>Thêm giỏ hàng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter tabs on Home
+        function filterHomeProducts(cat, btn) {
+            document.querySelectorAll('.home-tab').forEach(b => {
+                b.classList.remove('bg-soma-700', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            btn.classList.remove('bg-slate-100', 'text-slate-700');
+            btn.classList.add('bg-soma-700', 'text-white');
+
+            if (cat === 'all') {
+                renderHomeProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                renderHomeProducts(filtered);
+            }
+        }
+
+        // Render Catalog Grid (Image 6)
+        function renderCatalog(items) {
+            const container = document.getElementById('catalog-grid');
+            const countEl = document.getElementById('showing-count');
+            if (!container) return;
+
+            countEl.innerText = items.length;
+
+            if (items.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-3 py-16 text-center text-slate-400 space-y-3">
+                        <i class="fa-solid fa-box-open text-5xl"></i>
+                        <p class="text-base font-medium">Không tìm thấy sản phẩm phù hợp với bộ lọc.</p>
+                        <button onclick="resetAllFilters()" class="text-sm text-soma-700 font-bold underline">Đặt lại bộ lọc</button>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = items.map(item => `
+                <div class="group bg-white rounded-2xl border border-slate-200 hover:border-soma-300 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                    <div class="relative p-4 bg-gradient-to-b from-white to-slate-50/60 flex items-center justify-center min-h-[220px] cursor-pointer" onclick="navigateTo('product-detail', ${item.id})">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-black px-2 py-0.5 rounded shadow-sm z-10">
+                            ${item.discount}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-gradient-to-r from-[#00B140] via-[#F59E0B] to-[#FF2E8E] text-slate-900 text-[10px] font-black px-2 py-0.5 rounded shadow-sm z-10">
+                            MICOLL
+                        </span>
+                        <img src="${item.image}" alt="${item.name}" class="h-44 w-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                    <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                        <h3 class="font-bold text-slate-800 text-sm hover:text-soma-700 transition cursor-pointer line-clamp-2" onclick="navigateTo('product-detail', ${item.id})">
+                            ${item.name}
+                        </h3>
+
+                        <div class="space-y-3">
+                            <div class="flex items-baseline justify-between">
+                                <span class="text-base font-black text-slate-900">${formatVND(item.price)}</span>
+                                <span class="text-xs text-slate-400 line-through">${formatVND(item.oldPrice)}</span>
+                            </div>
+
+                            <button onclick="addToCart(${item.id})" class="w-full py-2 rounded-xl border border-slate-300 hover:border-soma-700 hover:bg-soma-700 text-slate-700 hover:text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-xs"></i>
+                                <span>Thêm giỏ hàng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Apply Sidebar Filters in Catalog
+        let selectedCategory = 'all';
+        let activeTag = null;
+
+        function filterCatalogCategory(cat, btn) {
+            selectedCategory = cat;
+            document.querySelectorAll('.catalog-cat-btn').forEach(b => {
+                b.classList.remove('font-bold', 'text-soma-700');
+                b.classList.add('text-slate-600');
+            });
+            btn.classList.add('font-bold', 'text-soma-700');
+            btn.classList.remove('text-slate-600');
+            applyFilters();
+        }
+
+        function filterProductsCategory(cat) {
+            navigateTo('products');
+            selectedCategory = cat;
+            applyFilters();
+        }
+
+        function toggleTagFilter(btn, tag) {
+            if (activeTag === tag) {
+                activeTag = null;
+                btn.classList.remove('bg-soma-700', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            } else {
+                document.querySelectorAll('.tag-btn').forEach(b => {
+                    b.classList.remove('bg-soma-700', 'text-white');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                activeTag = tag;
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-soma-700', 'text-white');
+            }
+            applyFilters();
+        }
+
+        function applyFilters() {
+            let filtered = [...products];
+
+            // Filter Category
+            if (selectedCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === selectedCategory);
+            }
+
+            // Filter Price
+            const checkedPrices = Array.from(document.querySelectorAll('input[name="price-filter"]:checked')).map(cb => cb.value);
+            if (checkedPrices.length > 0) {
+                filtered = filtered.filter(p => {
+                    return checkedPrices.some(val => {
+                        if (val === 'under-500k') return p.price < 500000;
+                        if (val === '500k-1500k') return p.price >= 500000 && p.price <= 1500000;
+                        if (val === 'above-1500k') return p.price > 1500000;
+                        return false;
+                    });
+                });
+            }
+
+            // Filter Tags
+            if (activeTag === 'featured') {
+                filtered = filtered.filter(p => p.featured);
+            } else if (activeTag === 'instock') {
+                filtered = filtered.filter(p => p.inStock);
+            }
+
+            // Sorting
+            const sortVal = document.getElementById('sort-select')?.value;
+            if (sortVal === 'price-asc') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (sortVal === 'price-desc') {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (sortVal === 'name-asc') {
+                filtered.sort((a, b) => a.name.localeCompare(b.name));
+            }
+
+            renderCatalog(filtered);
+        }
+
+        function resetAllFilters() {
+            selectedCategory = 'all';
+            activeTag = null;
+            document.querySelectorAll('input[name="price-filter"]').forEach(cb => cb.checked = false);
+            document.querySelectorAll('.tag-btn').forEach(b => {
+                b.classList.remove('bg-soma-700', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            document.getElementById('sort-select').value = 'default';
+            applyFilters();
+        }
+
+        // Load Single Product Detail Page (Matching Image 7)
+        function loadProductDetail(id) {
+            const product = products.find(p => p.id === id) || products[0];
+            currentSelectedProduct = product;
+
+            document.getElementById('detail-breadcrumb-cat').innerText = product.categoryName;
+            document.getElementById('detail-breadcrumb-name').innerText = product.name;
+            document.getElementById('detail-title').innerText = product.name;
+            document.getElementById('detail-code').innerText = product.code;
+            document.getElementById('detail-price').innerText = formatVND(product.price);
+            document.getElementById('detail-old-price').innerText = formatVND(product.oldPrice);
+            document.getElementById('detail-discount-badge').innerText = product.discount;
+            document.getElementById('detail-main-image').src = product.image;
+            document.getElementById('detail-qty').value = 1;
+            document.getElementById('spec-size').innerText = product.size;
+            document.getElementById('spec-coverage').innerText = product.coverage;
+            document.getElementById('spec-warning').innerText = product.warning;
+
+            // Render Thumbnails
+            const thumbsContainer = document.getElementById('detail-thumbnails');
+            thumbsContainer.innerHTML = product.thumbnails.map((src, idx) => `
+                <button onclick="switchDetailImage('${src}', this)" class="detail-thumb-btn rounded-xl border-2 ${idx === 0 ? 'border-soma-700' : 'border-slate-200'} bg-slate-50 p-2 overflow-hidden hover:border-soma-400 transition">
+                    <img src="${src}" class="w-full h-14 object-contain">
+                </button>
+            `).join('');
+        }
+
+        function switchDetailImage(src, btn) {
+            document.getElementById('detail-main-image').src = src;
+            document.querySelectorAll('.detail-thumb-btn').forEach(b => b.classList.replace('border-soma-700', 'border-slate-200'));
+            btn.classList.replace('border-slate-200', 'border-soma-700');
+        }
+
+        function changeDetailQty(delta) {
+            const input = document.getElementById('detail-qty');
+            let val = parseInt(input.value) || 1;
+            val = Math.max(1, val + delta);
+            input.value = val;
+        }
+
+        // CART LOGIC
+        function addToCart(productId, qty = 1) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                existing.qty += qty;
+            } else {
+                cart.push({ ...product, qty });
+            }
+
+            updateCartUI();
+            showToast(`Đã thêm "${product.name.slice(0, 30)}..." vào giỏ hàng!`);
+        }
+
+        function addToCartFromDetail() {
+            const qty = parseInt(document.getElementById('detail-qty').value) || 1;
+            addToCart(currentSelectedProduct.id, qty);
+        }
+
+        function buyNowFromDetail() {
+            addToCartFromDetail();
+            toggleCartDrawer();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const container = document.getElementById('cart-items-container');
+            const totalEl = document.getElementById('cart-total-price');
+
+            const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+            badge.innerText = totalCount;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-slate-400 space-y-3">
+                        <i class="fa-solid fa-cart-shopping text-4xl"></i>
+                        <p class="text-sm">Giỏ hàng của bạn đang trống</p>
+                    </div>
+                `;
+                totalEl.innerText = '0 VNĐ';
+                return;
+            }
+
+            let totalMoney = 0;
+            container.innerHTML = cart.map(item => {
+                const subtotal = item.price * item.qty;
+                totalMoney += subtotal;
+                return `
+                    <div class="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                        <img src="${item.image}" class="w-14 h-14 object-contain bg-white rounded-lg p-1 border border-slate-200">
+                        <div class="flex-grow">
+                            <h4 class="text-xs font-bold text-slate-800 line-clamp-1">${item.name}</h4>
+                            <div class="text-xs text-soma-800 font-bold mt-0.5">${formatVND(item.price)}</div>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button onclick="changeCartItemQty(${item.id}, -1)" class="w-5 h-5 bg-white border border-slate-300 rounded flex items-center justify-center text-xs font-bold">-</button>
+                                <span class="text-xs font-bold">${item.qty}</span>
+                                <button onclick="changeCartItemQty(${item.id}, 1)" class="w-5 h-5 bg-white border border-slate-300 rounded flex items-center justify-center text-xs font-bold">+</button>
+                            </div>
+                        </div>
+                        <button onclick="removeCartItem(${item.id})" class="text-slate-400 hover:text-red-500 p-1">
+                            <i class="fa-solid fa-trash-can text-sm"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            totalEl.innerText = formatVND(totalMoney);
+        }
+
+        function changeCartItemQty(id, delta) {
+            const item = cart.find(i => i.id === id);
+            if (!item) return;
+            item.qty += delta;
+            if (item.qty <= 0) {
+                cart = cart.filter(i => i.id !== id);
+            }
+            updateCartUI();
+        }
+
+        function removeCartItem(id) {
+            cart = cart.filter(i => i.id !== id);
+            updateCartUI();
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Paint Calculator
+        function openCalculatorModal() {
+            document.getElementById('calculator-modal').classList.remove('hidden');
+        }
+        function closeCalculatorModal() {
+            document.getElementById('calculator-modal').classList.add('hidden');
+        }
+        function calculatePaint() {
+            const area = parseFloat(document.getElementById('calc-area').value) || 100;
+            const type = document.getElementById('calc-type').value;
+
+            let lot = Math.ceil(area / 100);
+            let phu = Math.ceil(area / 60);
+            let latex = Math.ceil(area / 80);
+
+            document.getElementById('calc-result').innerHTML = `
+                <div class="font-bold text-soma-900 border-b border-soma-200 pb-1">Dự toán vật tư cho ${area} m²:</div>
+                <div class="flex justify-between"><span>Sơn lót kháng kiềm:</span> <strong>~${lot} Thùng 18L</strong></div>
+                <div class="flex justify-between"><span>Sơn phủ màu (${type === 'exterior' ? 'Ngoại thất' : 'Nội thất'}):</span> <strong>~${phu} Thùng 18L</strong></div>
+                <div class="flex justify-between"><span>Phụ gia MICOLL Latex chống thấm:</span> <strong>~${latex} Can 5KG</strong></div>
+                <div class="text-[11px] text-slate-500 mt-2 italic">* Định mức tham khảo thực tế dựa trên bề mặt tường tiêu chuẩn.</div>
+            `;
+        }
+
+        // Search Modal Mockup
+        function toggleSearchModal() {
+            const query = prompt('Nhập tên sản phẩm cần tìm kiếm (Ví dụ: Sơn ngoại thất, Latex, Nano):');
+            if (query && query.trim()) {
+                navigateTo('products');
+                const matched = products.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
+                renderCatalog(matched);
+            }
+        }
+
+        // Checkout Modal Mockup
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                alert('Giỏ hàng trống! Vui lòng chọn sản phẩm trước.');
+                return;
+            }
+            const phone = prompt('Vui lòng nhập Số điện thoại để SOMA liên hệ giao hàng & báo giá chiết khấu:');
+            if (phone) {
+                alert(`Cảm ơn bạn! SOMA đã tiếp nhận đơn hàng (${formatVND(cart.reduce((s, i) => s + i.price * i.qty, 0))}). Bộ phận CSKH sẽ gọi tới ${phone} ngay.`);
+                cart = [];
+                updateCartUI();
+                toggleCartDrawer();
+            }
+        }
+
+        // Contact Form Submission (Image 8)
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã gửi yêu cầu! Ban Giám Đốc và Bộ phận Kỹ thuật Công ty SOMA sẽ liên hệ phản hồi trong thời gian sớm nhất.');
+            e.target.reset();
+        }
+
+        // Toast feedback
+        function showToast(msg) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-24 right-6 z-50 bg-soma-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-soma-500/50 flex items-center gap-2.5 text-sm font-semibold animate-bounce';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-cyan-400"></i> <span>${msg}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 2800);
+        }
+
+        // Initial Boot & Hash Routing
+        function handleHashRouting() {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            if (hash === 'calculator' || hash === 'du-toan') {
+                openProductCalculator();
+            } else if (hash === 'products' || hash === 'san-pham') {
+                navigateTo('products');
+            } else if (hash === 'projects' || hash === 'du-an' || hash === 'cong-trinh') {
+                navigateTo('projects');
+            } else if (hash.startsWith('project-')) {
+                const pId = parseInt(hash.replace('project-', ''));
+                navigateTo('projects');
+                if (pId) setTimeout(() => openProjectModal(pId), 100);
+            } else if (hash === 'contact' || hash === 'lien-he') {
+                navigateTo('contact');
+            } else if (hash === 'partners' || hash === 'doi-tac') {
+                scrollToPartners();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderHomeProducts(products);
+            renderCatalog(products);
+            renderProjects('all');
+            updateCartUI();
+            handleHashRouting();
+        });
+
+        window.addEventListener('hashchange', handleHashRouting);
+    </script>
+</body>
+</html>

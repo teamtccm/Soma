@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMA - Công Ty TNHH Thương Mại Và Sản Xuất SOMA | Sơn & Chống Thấm Cao Cấp</title>
+    <meta name="description" content="SOMA - Giải pháp sơn nội ngoại thất và phụ gia chống thấm chuyên dụng hàng đầu. Công nghệ Nhật Bản bền vững cùng thời gian.">
+    
+    <!-- Tailwind CSS CDN with Custom Theme Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        soma: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            300: '#7cc8fb',
+                            400: '#36abf7',
+                            500: '#0c8ee9',
+                            600: '#006ec7',
+                            700: '#0057a1',
+                            800: '#044a85',
+                            900: '#0a3d6e',
+                            950: '#072749',
+                        },
+                        navy: {
+                            800: '#0f2744',
+                            900: '#0a192f',
+                            950: '#06101e'
+                        },
+                        slatecustom: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            600: '#475569',
+                            800: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'Segoe UI', 'sans-serif'],
+                        script: ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .font-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        .hero-pattern {
+            background-color: #082846;
+            background-image: radial-gradient(#1e4e79 1.2px, transparent 1.2px), radial-gradient(#1e4e79 1.2px, #082846 1.2px);
+            background-size: 48px 48px;
+            background-position: 0 0, 24px 24px;
+        }
+        .testimonial-pattern {
+            background-color: #0a3d6e;
+            background-image: radial-gradient(#18538c 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-soma-600 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-soma-400"></i> CÔNG TY TNHH THƯƠNG MẠI VÀ SẢN XUẤT SOMA</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-phone text-soma-400"></i> Hotline: <strong class="text-white">0889 166 655</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="text-slate-300"><i class="fa-solid fa-truck-fast text-soma-400 mr-1"></i> Giao hàng toàn quốc - Chiết khấu đại lý hấp dẫn</span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <a href="#calculator" onclick="openCalculatorModal()" class="text-soma-300 hover:text-white transition flex items-center gap-1 font-semibold">
+                    <i class="fa-solid fa-calculator"></i> Dự toán sơn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR (3 Navigation Tabs only as requested: Giới Thiệu, Sản Phẩm, Liên Hệ) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- SOMA LOGO (Image 9) -->
+                <div class="flex items-center gap-3">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center gap-3 group">
+                        <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 overflow-hidden shadow-sm flex items-center justify-center p-1 group-hover:scale-105 transition-transform">
+                            <img src="images/soma-logo.jpg" alt="SOMA Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-2xl font-black tracking-wider text-soma-900 flex items-center gap-1">
+                                SOMA<span class="text-soma-500">.</span>
+                            </span>
+                            <span class="block text-[10px] uppercase font-bold tracking-widest text-slate-500 -mt-1">
+                                Sơn & Chống Thấm
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- NAVIGATION ITEMS (Exactly 3 Items: Giới Thiệu | Sản Phẩm | Liên Hệ) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home" class="nav-item text-base font-bold text-soma-800 border-b-2 border-soma-700 py-1 transition">
+                        Giới thiệu
+                    </a>
+                    <a href="javascript:void(0)" onclick="navigateTo('products')" id="nav-products" class="nav-item text-base font-semibold text-slate-600 hover:text-soma-700 border-b-2 border-transparent py-1 transition">
+                        Sản phẩm
+                    </a>
+                    <a href="javascript:void(0)" onclick="navigateTo('contact')" id="nav-contact" class="nav-item text-base font-semibold text-slate-600 hover:text-soma-700 border-b-2 border-transparent py-1 transition">
+                        Liên hệ
+                    </a>
+                </nav>
+
+                <!-- HEADER ACTIONS (Search, Phone, Cart) -->
+                <div class="flex items-center gap-4">
+                    <!-- Search Icon Button -->
+                    <button onclick="toggleSearchModal()" class="w-10 h-10 rounded-full text-slate-600 hover:text-soma-700 hover:bg-slate-100 flex items-center justify-center transition" title="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+                    
+                    <!-- Quick Contact Hotline (Desktop) -->
+                    <a href="tel:0889166655" class="hidden lg:flex items-center gap-2.5 bg-slate-100 hover:bg-soma-50 text-soma-900 border border-slate-200 px-3.5 py-1.5 rounded-full text-sm font-semibold transition">
+                        <span class="w-6 h-6 rounded-full bg-soma-600 text-white flex items-center justify-center text-xs animate-pulse">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>0889 166 655</span>
+                    </a>
+
+                    <!-- Cart Button with Count Badge -->
+                    <button onclick="toggleCartDrawer()" class="relative w-11 h-11 rounded-full bg-soma-50 text-soma-800 hover:bg-soma-100 border border-soma-200 flex items-center justify-center transition shadow-sm" title="Giỏ hàng">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md">
+                            0
+                        </span>
+                    </button>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 rounded-lg text-slate-700 hover:bg-slate-100 flex items-center justify-center">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="javascript:void(0)" onclick="navigateTo('home'); toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-bold text-soma-800 bg-soma-50">
+                <i class="fa-solid fa-house mr-2 text-soma-600"></i> Giới thiệu
+            </a>
+            <a href="javascript:void(0)" onclick="navigateTo('products'); toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-cubes mr-2 text-soma-600"></i> Sản phẩm
+            </a>
+            <a href="javascript:void(0)" onclick="navigateTo('contact'); toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-headset mr-2 text-soma-600"></i> Liên hệ
+            </a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:0889166655" class="w-full text-center bg-soma-700 text-white py-2.5 rounded-xl font-bold text-sm shadow">
+                    <i class="fa-solid fa-phone mr-1.5"></i> Hotline: 0889 166 655
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: TRANG CHỦ / GIỚI THIỆU (HOME VIEW - Corresponding to Images 1 to 5) -->
+    <!-- ========================================================================= -->
+    <main id="view-home" class="view-section flex-grow">
+
+        <!-- 1. HERO SECTION (Replaces Image 1 with SOMA Blue theme & Painter Image 10) -->
+        <section class="hero-pattern text-white relative overflow-hidden py-12 lg:py-20">
+            <!-- Decorative Glow & Shapes -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-soma-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/2 right-0 w-[500px] h-[500px] bg-soma-400/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-soma-900/80 border border-soma-600/40 text-soma-200 text-sm font-semibold shadow-inner">
+                            <i class="fa-solid fa-award text-yellow-400"></i>
+                            <span class="font-script text-lg text-yellow-300 tracking-wide mr-1">sơn & chống thấm SOMA</span>
+                            • Công nghệ Nhật Bản
+                        </div>
+                        
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+                            Chất lượng nâng tầm <br class="hidden sm:inline">
+                            <span class="bg-gradient-to-r from-soma-300 via-sky-200 to-white bg-clip-text text-transparent">
+                                mọi công trình bền vững
+                            </span>
+                        </h1>
+                        
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            <strong>SOMA</strong> chuyên sản xuất và phân phối các dòng sơn nội ngoại thất cao cấp, sơn chống thấm chuyên dụng và phụ gia xây dựng. Giải pháp che chở và phục hồi tối ưu cho mọi ngôi nhà Việt.
+                        </p>
+
+                        <!-- Highlights list -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-slate-200">
+                            <div class="flex items-center gap-2 bg-soma-900/40 border border-soma-700/30 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-droplet-slash text-cyan-400 text-base"></i>
+                                <span>Chống thấm Nano</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-soma-900/40 border border-soma-700/30 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-shield-heart text-sky-400 text-base"></i>
+                                <span>Bảo hành 10 năm</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-soma-900/40 border border-soma-700/30 p-2.5 rounded-lg col-span-2 sm:col-span-1">
+                                <i class="fa-solid fa-leaf text-emerald-400 text-base"></i>
+                                <span>An toàn thân thiện</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                            <button onclick="navigateTo('products')" class="px-8 py-3.5 rounded-xl bg-soma-500 hover:bg-soma-400 text-white font-bold text-base shadow-lg shadow-soma-600/40 hover:shadow-soma-500/60 hover:-translate-y-0.5 transition flex items-center gap-2.5">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Xem gian hàng</span>
+                            </button>
+                            <button onclick="navigateTo('contact')" class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-base backdrop-blur-sm transition flex items-center gap-2">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Liên hệ tư vấn</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual: Kadu-style layout (person on circle + secondary image) -->
+                    <div class="lg:col-span-5 flex justify-center relative">
+                        <div class="relative w-[340px] h-[420px] sm:w-[420px] sm:h-[500px]">
+                            
+                            <!-- Main circle backdrop (like Kadu orange circle) -->
+                            <div class="absolute bottom-4 right-4 w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] rounded-full bg-gradient-to-br from-soma-400 via-soma-500 to-soma-700 shadow-2xl"></div>
+                            <!-- Circle border ring -->
+                            <div class="absolute bottom-2 right-2 w-[290px] h-[290px] sm:w-[355px] sm:h-[355px] rounded-full border-2 border-soma-300/30"></div>
+                            
+                            <!-- Small secondary circular image (waterproofing work) -->
+                            <div class="absolute bottom-0 -left-2 sm:left-0 w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] rounded-full overflow-hidden border-4 border-white/20 shadow-xl z-20">
+                                <img src="images/waterproof-work.jpg" alt="Chống thấm chuyên nghiệp" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Painter Image (clean cutout, overlaps circle) -->
+                            <div class="relative z-10 w-full h-full flex items-end justify-center">
+                                <img src="images/painter-hero.jpg" alt="Thợ sơn SOMA chuyên nghiệp" class="w-[85%] h-auto max-h-[100%] object-contain hover:scale-[1.03] transition-transform duration-500">
+                            </div>
+
+                            <!-- Floating badge 1: top right -->
+                            <div class="absolute top-8 right-0 z-20 bg-white text-slate-800 px-3.5 py-2 rounded-xl shadow-xl flex items-center gap-2.5 border border-slate-100">
+                                <span class="w-8 h-8 rounded-lg bg-soma-100 text-soma-700 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-check-double"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-soma-900">Sơn chuẩn 100%</div>
+                                    <div class="text-[10px] text-slate-500">Chính hãng SOMA</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating badge 2: bottom right -->
+                            <div class="absolute bottom-14 -right-2 z-20 bg-navy-950/90 text-white backdrop-blur-md px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 border border-soma-600/40">
+                                <div class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></div>
+                                <div class="text-xs font-semibold">Bền bỉ cùng năm tháng</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CATEGORY HIGHLIGHTS BAR (Matching Image 2 Top Section) -->
+        <section class="py-12 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <span class="font-script text-xl text-soma-600 font-bold block">Danh mục</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Các dòng sản phẩm nổi bật
+                    </h2>
+                </div>
+
+                <!-- 4 Category Cards matching Image 2 style -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                    
+                    <!-- Cat 1 -->
+                    <div onclick="filterProductsCategory('ngoai-that')" class="cursor-pointer group bg-slate-50 hover:bg-soma-50 p-6 rounded-2xl border border-slate-200/80 hover:border-soma-300 transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md">
+                        <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-soma-700 text-2xl mb-4 group-hover:scale-110 group-hover:bg-soma-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-soma-700 text-white rounded-full text-xs sm:text-sm font-bold tracking-wide group-hover:bg-soma-800 transition">
+                            Sơn Ngoại Thất
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2">Chống thấm & kháng tia UV</p>
+                    </div>
+
+                    <!-- Cat 2 -->
+                    <div onclick="filterProductsCategory('noi-that')" class="cursor-pointer group bg-slate-50 hover:bg-soma-50 p-6 rounded-2xl border border-slate-200/80 hover:border-soma-300 transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md">
+                        <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-soma-700 text-2xl mb-4 group-hover:scale-110 group-hover:bg-soma-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-soma-700 text-white rounded-full text-xs sm:text-sm font-bold tracking-wide group-hover:bg-soma-800 transition">
+                            Sơn Nội Thất
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2">Lau chùi tối ưu, kháng khuẩn</p>
+                    </div>
+
+                    <!-- Cat 3 -->
+                    <div onclick="filterProductsCategory('phu-gia')" class="cursor-pointer group bg-slate-50 hover:bg-soma-50 p-6 rounded-2xl border border-slate-200/80 hover:border-soma-300 transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md">
+                        <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-soma-700 text-2xl mb-4 group-hover:scale-110 group-hover:bg-soma-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-soma-700 text-white rounded-full text-xs sm:text-sm font-bold tracking-wide group-hover:bg-soma-800 transition">
+                            Phụ Gia Chống Thấm
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2">Latex, CT-11A, kết nối vữa</p>
+                    </div>
+
+                    <!-- Cat 4 -->
+                    <div onclick="filterProductsCategory('chuyen-dung')" class="cursor-pointer group bg-slate-50 hover:bg-soma-50 p-6 rounded-2xl border border-slate-200/80 hover:border-soma-300 transition-all text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md">
+                        <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-soma-700 text-2xl mb-4 group-hover:scale-110 group-hover:bg-soma-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-soma-700 text-white rounded-full text-xs sm:text-sm font-bold tracking-wide group-hover:bg-soma-800 transition">
+                            Chống Thấm Chuyên Dụng
+                        </span>
+                        <p class="text-xs text-slate-500 mt-2">Màng PU, gốc xi măng, Epoxy</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SECTION (Matching Image 2 Bottom Section) -->
+        <section class="py-16 bg-slate-50 border-b border-slate-200 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Images with Certified Stamp (Matching Image 2 layout) -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative max-w-md mx-auto">
+                            <!-- Main Image (SOMA Paint in Villa Setting) -->
+                            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200">
+                                <img src="images/soma-bucket-1.jpg" alt="Nhà máy và sản phẩm SOMA" class="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+
+                            <!-- Overlapping Secondary Image -->
+                            <div class="absolute -bottom-6 -right-6 w-48 sm:w-60 h-36 sm:h-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white">
+                                <img src="images/soma-ext-paint.jpg" alt="Sơn ngoại thất SOMA" class="w-full h-full object-contain p-2 bg-slate-100">
+                            </div>
+
+                            <!-- Certified Stamp Badge (Matching Image 2 Stamp) -->
+                            <div class="absolute -top-6 -left-6 w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-dashed border-slate-700 bg-white/90 backdrop-blur-sm p-1.5 shadow-lg flex items-center justify-center text-center animate-pulse-slow">
+                                <div class="w-full h-full rounded-full border border-slate-700 flex flex-col items-center justify-center p-1 text-slate-900">
+                                    <i class="fa-solid fa-stamp text-soma-700 text-lg"></i>
+                                    <span class="text-[9px] font-black uppercase tracking-wider mt-0.5">CHỨNG NHẬN</span>
+                                    <span class="text-[8px] font-bold text-soma-700">ISO 9001:2015</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Text Content (Exact Text from Image 2) -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div>
+                            <span class="font-script text-2xl text-soma-600 font-bold block">Giới thiệu</span>
+                            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">
+                                Công Ty TNHH Thương Mại Và Sản Xuất SOMA
+                            </h2>
+                        </div>
+
+                        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                            Là công ty được thành lập bởi 2 người trẻ tuổi dám đam mê và mạo hiểm với ngành vật liệu xây dựng mà giới trẻ thấy khô khan và chán nản.
+                        </p>
+
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Lấy cảm hứng từ <strong>Thần Mặt Trăng SOMA</strong> – biểu trưng cho sự <em>che chở, tĩnh lặng, bền bỉ và khả năng phục hồi</em>, chúng tôi cam kết mang đến những sản phẩm sơn và phụ gia chống thấm đạt chuẩn chất lượng quốc tế, giải quyết triệt để nỗi lo thấm dột, nấm mốc của mọi gia đình.
+                        </p>
+
+                        <!-- Key Stats -->
+                        <div class="grid grid-cols-3 gap-4 pt-2 border-t border-slate-200">
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">100%</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Chính hãng & an toàn</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">500+</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Công trình hoàn thiện</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl sm:text-3xl font-black text-soma-800">10 Năm</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5">Bền màu chống thấm</div>
+                            </div>
+                        </div>
+
+                        <!-- Button Xem Thêm -->
+                        <div class="pt-2">
+                            <button onclick="navigateTo('products')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm shadow-md transition">
+                                <span>Xem sản phẩm</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PRODUCTS (Matching Image 3 on Home View) -->
+        <section class="py-16 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                    <div>
+                        <span class="font-script text-xl text-soma-600 font-bold block">Gian hàng chính hãng</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                            Sản phẩm nổi bật
+                        </h2>
+                    </div>
+
+                    <!-- Category Tabs (Matching Image 3 Pills) -->
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterHomeProducts('all', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-soma-700 text-white shadow-sm transition">
+                            Tất cả
+                        </button>
+                        <button onclick="filterHomeProducts('ngoai-that', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Sơn ngoại thất
+                        </button>
+                        <button onclick="filterHomeProducts('noi-that', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Sơn nội thất
+                        </button>
+                        <button onclick="filterHomeProducts('phu-gia', this)" class="home-tab px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                            Phụ gia chống thấm
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Products Grid (Matching Image 3 Product Cards) -->
+                <div id="home-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Dynamic Product Cards injected via JS -->
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center mt-10">
+                    <button onclick="navigateTo('products')" class="px-8 py-3 rounded-full border-2 border-soma-700 text-soma-800 hover:bg-soma-700 hover:text-white font-bold text-sm transition inline-flex items-center gap-2">
+                        <span>Xem toàn bộ danh mục sản phẩm</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TESTIMONIALS SECTION (Matching Image 4 with Blue Theme) -->
+        <section class="testimonial-pattern text-white py-16 lg:py-20 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Left Title & Intro (Matching Image 4) -->
+                    <div class="lg:col-span-5 space-y-4 text-center lg:text-left">
+                        <span class="font-script text-2xl text-soma-300 font-bold block">Đánh giá</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Khách hàng đánh giá
+                        </h2>
+                        <p class="text-slate-200 text-base max-w-md mx-auto lg:mx-0 leading-relaxed">
+                            Hơn 1.000 khách hàng, nhà thầu và gia chủ đã hoàn toàn hài lòng về chất lượng sơn và độ bền chống thấm của SOMA.
+                        </p>
+                        <div class="pt-4 flex items-center justify-center lg:justify-start gap-3 text-yellow-400 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-white text-sm font-bold ml-2">5.0 / 5.0 (Tuyệt đối)</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Testimonial Card (Matching Image 4 Card Layout) -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 flex flex-col sm:flex-row items-center gap-6 relative">
+                            <i class="fa-solid fa-quote-right absolute top-6 right-8 text-4xl sm:text-5xl text-slate-200 select-none"></i>
+                            
+                            <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shrink-0 border-2 border-soma-200 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Chị Thảo My" class="w-full h-full object-cover">
+                            </div>
+
+                            <div class="space-y-3 relative z-10 text-center sm:text-left">
+                                <div class="flex items-center justify-center sm:justify-start text-yellow-400 text-sm gap-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
+                                    "Nhờ sử dụng dòng sơn ngoại thất chống thấm và phụ gia SOMA Latex cho dự án biệt thự tại Hải Phòng, công trình trải qua mùa mưa bão lớn mà tường nhà vẫn láng mịn, không hề có hiện tượng ố vàng hay ngấm nước. Rất tin tưởng đội ngũ SOMA!"
+                                </p>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-900 text-base">Chị Thảo My</h4>
+                                    <p class="text-xs text-soma-700 font-semibold">Đại diện Công ty Kiến trúc & Xây dựng ABC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PARTNERS SECTION (Matching Image 5 Top Section) -->
+        <section class="py-12 bg-slate-50 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-800 mb-8">
+                    Đối tác & Nhà thầu tin dùng
+                </h3>
+                <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all">
+                    <span class="text-xl sm:text-2xl font-black text-slate-700 tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-city text-soma-700"></i> VINACONEX
+                    </span>
+                    <span class="text-xl sm:text-2xl font-black text-slate-700 tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-building text-soma-700"></i> COTECCONS
+                    </span>
+                    <span class="text-xl sm:text-2xl font-black text-slate-700 tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-house-laptop text-soma-700"></i> HOA BINH CORP
+                    </span>
+                    <span class="text-xl sm:text-2xl font-black text-slate-700 tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-cubes-stacked text-soma-700"></i> DELTA GROUP
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: TRANG SẢN PHẨM (CATALOG VIEW - Matching Image 6) -->
+    <!-- ========================================================================= -->
+    <main id="view-products" class="view-section flex-grow hidden bg-slate-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-900 font-bold">Danh sách sản phẩm</span>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- SIDEBAR FILTERS (Matching Image 6 Left Panel) -->
+                <aside class="lg:col-span-3 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                        
+                        <!-- Filter 1: Categories -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                DANH MỤC
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li>
+                                    <button onclick="filterCatalogCategory('all', this)" class="catalog-cat-btn w-full text-left py-1.5 font-bold text-soma-700 flex items-center justify-between">
+                                        <span>Tất cả sản phẩm</span>
+                                        <span class="text-xs bg-soma-100 px-2 py-0.5 rounded-full text-soma-800" id="count-all">6</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('ngoai-that', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Sơn ngoại thất</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">2</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('noi-that', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Sơn nội thất</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">2</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('phu-gia', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Phụ gia chống thấm</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="filterCatalogCategory('chuyen-dung', this)" class="catalog-cat-btn w-full text-left py-1.5 text-slate-600 hover:text-soma-700 flex items-center justify-between">
+                                        <span>Chống thấm chuyên dụng</span>
+                                        <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">1</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Filter 2: Price Ranges (Matching Image 6 checkboxes) -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                GIÁ SẢN PHẨM
+                            </h3>
+                            <div class="space-y-2.5 text-sm">
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="under-500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">Dưới 500.000 VNĐ</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="500k-1500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">500.000 - 1.500.000 VNĐ</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 cursor-pointer">
+                                    <input type="checkbox" name="price-filter" value="above-1500k" onchange="applyFilters()" class="w-4 h-4 rounded text-soma-700 focus:ring-soma-500 border-slate-300">
+                                    <span class="text-slate-700">Trên 1.500.000 VNĐ</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Filter 3: Status Tags (Matching Image 6 Status Buttons) -->
+                        <div>
+                            <h3 class="text-base font-extrabold uppercase text-slate-900 tracking-wider border-b border-slate-100 pb-2 mb-3">
+                                TRẠNG THÁI
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="toggleTagFilter(this, 'featured')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Nổi Bật
+                                </button>
+                                <button onclick="toggleTagFilter(this, 'sale')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Giảm giá
+                                </button>
+                                <button onclick="toggleTagFilter(this, 'instock')" class="tag-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200">
+                                    Còn hàng
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Reset Filter Button (Matching Image 6 "Đặt lại" button) -->
+                        <div>
+                            <button onclick="resetAllFilters()" class="w-full py-2.5 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm transition shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-rotate-left text-xs"></i>
+                                <span>Đặt lại bộ lọc</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <!-- MAIN PRODUCT GRID (Matching Image 6 Right Grid) -->
+                <section class="lg:col-span-9 space-y-6">
+                    
+                    <!-- Top Bar: Results Count & Sort Dropdown -->
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-4">
+                        <div class="text-sm text-slate-600">
+                            Hiển thị: <strong class="text-slate-900" id="showing-count">6</strong> sản phẩm
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-slate-500 font-medium">Sắp xếp:</span>
+                            <select id="sort-select" onchange="applyFilters()" class="text-sm bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-soma-500 font-semibold text-slate-700">
+                                <option value="default">Mặc định</option>
+                                <option value="price-asc">Giá: Thấp đến Cao</option>
+                                <option value="price-desc">Giá: Cao đến Thấp</option>
+                                <option value="name-asc">Tên A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid Container -->
+                    <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Dynamic Catalog Products via JS -->
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: TRANG CHI TIẾT SẢN PHẨM (PRODUCT DETAIL VIEW - Matching Image 7) -->
+    <!-- ========================================================================= -->
+    <main id="view-product-detail" class="view-section flex-grow hidden bg-slate-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-soma-700" id="detail-breadcrumb-cat">Sơn ngoại thất</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-900 font-bold" id="detail-breadcrumb-name">Chi tiết sản phẩm</span>
+            </nav>
+
+            <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+                    
+                    <!-- Left: Main Image + Thumbnail Switcher (Matching Image 7 Left Side) -->
+                    <div class="lg:col-span-6 space-y-4">
+                        <!-- Main Product Display Box -->
+                        <div class="relative rounded-2xl border border-slate-200 bg-slate-50 p-6 flex items-center justify-center min-h-[380px] sm:min-h-[440px] overflow-hidden group">
+                            <!-- Brand Stamp Badge (Matching Image 7 Top Left Brand Tag) -->
+                            <div class="absolute top-4 left-4 bg-soma-800 text-white text-xs font-black px-3 py-1 rounded-md uppercase tracking-wider shadow">
+                                SOMA PAINT
+                            </div>
+                            
+                            <!-- Main Image -->
+                            <img id="detail-main-image" src="images/soma-ext-paint.jpg" alt="Sơn SOMA" class="max-h-[360px] w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+
+                            <!-- Expand View Icon -->
+                            <button onclick="previewImageModal()" class="absolute bottom-4 left-4 w-9 h-9 rounded-lg bg-white/90 shadow border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-soma-700 hover:text-white transition">
+                                <i class="fa-solid fa-expand text-sm"></i>
+                            </button>
+                        </div>
+
+                        <!-- Thumbnail Gallery -->
+                        <div class="grid grid-cols-4 gap-3" id="detail-thumbnails">
+                            <!-- Thumbnail buttons -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Product Information & Specs (Matching Image 7 Right Side) -->
+                    <div class="lg:col-span-6 space-y-6">
+                        
+                        <!-- Title & Meta -->
+                        <div>
+                            <h1 id="detail-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                                Sơn Ngoại Thất Siêu Bóng Chống Thấm SOMA Nano Guard - 18L
+                            </h1>
+
+                            <div class="flex flex-wrap items-center gap-4 mt-3 text-sm">
+                                <!-- Star Rating -->
+                                <div class="flex items-center text-yellow-400 gap-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-slate-500">Mã sản phẩm: <strong id="detail-code" class="text-slate-800">SOMA-EXT-023</strong></span>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-emerald-600 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i>Còn hàng</span>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Section -->
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex items-baseline gap-4">
+                            <span class="text-sm font-semibold text-slate-500">Giá bán:</span>
+                            <span id="detail-price" class="text-2xl sm:text-3xl font-black text-soma-800">1.850.000 VNĐ</span>
+                            <span id="detail-old-price" class="text-base text-slate-400 line-through">2.300.000 VNĐ</span>
+                            <span id="detail-discount-badge" class="ml-auto bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-full">-20%</span>
+                        </div>
+
+                        <!-- Quantity Selector & Actions (Matching Image 7 Buttons) -->
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-4">
+                                <span class="text-sm font-semibold text-slate-700">Số lượng:</span>
+                                <div class="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-sm">
+                                    <button onclick="changeDetailQty(-1)" class="w-10 h-10 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition font-bold text-lg">-</button>
+                                    <input type="number" id="detail-qty" value="1" min="1" class="w-14 text-center font-bold text-slate-900 border-x border-slate-300 focus:outline-none py-1">
+                                    <button onclick="changeDetailQty(1)" class="w-10 h-10 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition font-bold text-lg">+</button>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                                <button onclick="addToCartFromDetail()" class="py-3.5 px-6 rounded-xl bg-soma-900 hover:bg-navy-950 text-white font-bold text-sm tracking-wide shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>THÊM GIỎ HÀNG</span>
+                                </button>
+                                <button onclick="buyNowFromDetail()" class="py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-sm tracking-wide shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-bolt text-yellow-400"></i>
+                                    <span>THANH TOÁN NGAY</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Technical Specification Table (Matching Image 7 Table Exactly) -->
+                        <div class="pt-4 border-t border-slate-200">
+                            <h3 class="text-base font-extrabold text-slate-900 mb-3 flex items-center justify-between">
+                                <span>Mô tả & Thông số kỹ thuật</span>
+                                <i class="fa-solid fa-minus text-xs text-slate-400"></i>
+                            </h3>
+
+                            <div class="overflow-x-auto rounded-xl border border-slate-200">
+                                <table class="w-full text-xs sm:text-sm text-left">
+                                    <tbody class="divide-y divide-slate-200" id="detail-specs-table">
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700 w-1/3">Thương hiệu</td>
+                                            <td class="px-4 py-2.5 text-slate-900 font-semibold">SOMA</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Dung tích / Quy cách</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-size">18 Lít / Thùng</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Độ phủ lý thuyết</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-coverage">11 - 13 m²/Lít/Lớp</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Tiêu chuẩn chất lượng</td>
+                                            <td class="px-4 py-2.5 text-slate-900">TCCS 01:2026/SOMA - ISO 9001:2015</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Thời gian khô</td>
+                                            <td class="px-4 py-2.5 text-slate-900">Khô bề mặt 30 phút, sơn lớp 2 sau 2 giờ</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Xuất xứ</td>
+                                            <td class="px-4 py-2.5 text-slate-900">Việt Nam (Công nghệ Nhật Bản)</td>
+                                        </tr>
+                                        <tr class="bg-slate-50">
+                                            <td class="px-4 py-2.5 font-bold text-slate-700">Khuyến cáo thi công</td>
+                                            <td class="px-4 py-2.5 text-slate-900" id="spec-warning">Khuấy đều trước khi sử dụng. Thi công khi độ ẩm tường &lt; 16%.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: TRANG LIÊN HỆ (CONTACT VIEW - Matching Image 8) -->
+    <!-- ========================================================================= -->
+    <main id="view-contact" class="view-section flex-grow hidden bg-slate-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center text-sm text-slate-500 mb-6 gap-2">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-soma-700">Trang chủ</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-900 font-bold">Liên hệ</span>
+            </nav>
+
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8 uppercase tracking-tight">
+                LIÊN HỆ VỚI CHÚNG TÔI
+            </h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Form: GỬI YÊU CẦU (Matching Image 8 Left Box) -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+                    <h2 class="text-lg font-extrabold text-slate-900 uppercase tracking-wide border-b border-slate-100 pb-3">
+                        GỬI YÊU CẦU
+                    </h2>
+
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">Họ và tên *</label>
+                            <input type="text" required placeholder="Nhập họ và tên của bạn..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">Số điện thoại *</label>
+                            <input type="tel" required placeholder="Nhập số điện thoại liên hệ..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">Tiêu đề</label>
+                            <input type="text" placeholder="Báo giá sơn công trình / Tư vấn chống thấm / Đăng ký đại lý..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">Nội dung yêu cầu *</label>
+                            <textarea rows="4" required placeholder="Nhập diện tích công trình hoặc câu hỏi của bạn..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-soma-600 text-sm bg-slate-50 focus:bg-white transition"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="px-8 py-3.5 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold text-sm shadow-md hover:shadow-lg transition inline-flex items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Gửi tin nhắn</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right Box: BẠN CẦN GẶP TRỰC TIẾP & ZALO QR (Matching Image 8 Right Box) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Direct Info Box (Matching Image 8 Solid Green Box, styled in SOMA Blue) -->
+                    <div class="bg-soma-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-5">
+                        <h2 class="text-lg font-extrabold uppercase tracking-wide border-b border-soma-700/60 pb-3">
+                            BẠN CẦN GẶP TRỰC TIẾP
+                        </h2>
+
+                        <div class="space-y-4 text-sm text-slate-200">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-soma-400 text-base mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Địa chỉ:</strong>
+                                    <span>Ô số 140, Tập thể Kiến trúc Thăng Long, phường Đức Thắng, quận Bắc Từ Liêm, Thành phố Hà Nội</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone text-soma-400 text-base mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Số điện thoại:</strong>
+                                    <a href="tel:0889166655" class="text-soma-300 hover:underline font-bold">0889 166 655</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-envelope text-soma-400 text-base mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Email:</strong>
+                                    <span>somavn@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zalo QR Code Box (As specified: Placeholder for QR Zalo / Direct Link) -->
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm text-center space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 mx-auto flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-base">
+                            KẾT NỐI QUA ZALO CHÍNH THỨC
+                        </h3>
+                        <p class="text-xs text-slate-500">
+                            Quét mã QR hoặc nhấn nút để chat trực tiếp với kỹ sư kỹ thuật SOMA 24/7
+                        </p>
+                        
+                        <!-- QR Image Placeholder -->
+                        <div class="w-40 h-40 mx-auto bg-slate-50 border-2 border-dashed border-slate-300 rounded-2xl p-2 flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-qrcode text-6xl text-slate-400"></i>
+                            <span class="text-[10px] text-slate-400 font-bold mt-2">[QR Zalo SOMA]</span>
+                        </div>
+
+                        <div>
+                            <a href="https://zalo.me/0889166655" target="_blank" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Mở Chat Zalo (0889 166 655)</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GOOGLE MAPS EMBED (Matching Image 8 Bottom Map) -->
+            <div class="mt-10 bg-white p-4 rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="rounded-2xl overflow-hidden h-72 sm:h-96 w-full border border-slate-100">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.473663213038!2d105.7766!3d21.0717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab29a9749137%3A0x6b0a1d4715f2136e!2zxJDhu6ljIFRo4bqvbmcsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- FOOTER (Matching Image 5 Footer with SOMA Blue / Slate Grey Palette) -->
+    <!-- ========================================================================= -->
+    <footer class="bg-navy-950 text-slate-300 pt-14 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Top Footer Bar (Matching Image 5 Logo + Góp ý từ bạn) -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-slate-800">
+                <!-- SOMA Logo & Subtitle -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center">
+                        <img src="images/soma-logo.jpg" alt="SOMA Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-wider text-white">SOMA<span class="text-soma-400">.</span></span>
+                        <span class="block text-xs text-slate-400">Sơn & Chống Thấm Cao Cấp</span>
+                    </div>
+                </div>
+
+                <!-- Feedback Button & Motto (Matching Image 5) -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-right">
+                    <p class="text-xs text-slate-400 max-w-sm">
+                        Mỗi đóng góp từ bạn chính là kim chỉ nam để chúng tôi không ngừng thay đổi và cải thiện mỗi ngày.
+                    </p>
+                    <button onclick="navigateTo('contact')" class="px-6 py-2.5 rounded-full border border-soma-400 text-soma-300 hover:bg-soma-700 hover:text-white font-bold text-xs uppercase tracking-wider transition">
+                        Góp ý từ bạn
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4 Columns Footer (Matching Image 5 4-column layout) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10 text-sm">
+                
+                <!-- Column 1: THÔNG TIN LIÊN HỆ -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        THÔNG TIN LIÊN HỆ
+                    </h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-slate-300">Địa chỉ:</strong> Ô số 140, Tập thể Kiến trúc Thăng Long, Bắc Từ Liêm, Hà Nội
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Hotline:</strong> 0889 166 655
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Phản ánh chất lượng:</strong> 0889 166 655
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        <strong class="text-slate-300">Email:</strong> somavn@gmail.com
+                    </p>
+                </div>
+
+                <!-- Column 2: HỆ THỐNG CỬA HÀNG -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        HỆ THỐNG PHÂN PHỐI
+                    </h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Văn phòng Hà Nội:</strong>
+                        Ô 140 Tập thể Kiến trúc Thăng Long, Bắc Từ Liêm, TP. Hà Nội
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Chi nhánh Hải Phòng:</strong>
+                        Số 3/6/455 Đằng Hải, Quận Hải An, TP. Hải Phòng
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <strong class="text-white block">Chi nhánh TP. HCM:</strong>
+                        Quận Tân Bình, Thành phố Hồ Chí Minh
+                    </p>
+                </div>
+
+                <!-- Column 3: VỀ CHÚNG TÔI -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        VỀ CHÚNG TÔI
+                    </h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-white transition">Câu chuyện SOMA</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-white transition">Hồ sơ năng lực sản xuất</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-white transition">Chứng nhận kiểm định chất lượng</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('contact')" class="hover:text-white transition">Đăng ký mở đại lý phân phối</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: CHÍNH SÁCH KHÁCH HÀNG -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-black uppercase tracking-wider text-white border-b border-slate-800 pb-2">
+                        CHÍNH SÁCH KHÁCH HÀNG
+                    </h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách kiểm hàng</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách đổi trả & bảo hành</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition">Hình thức thanh toán - Giao hàng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+                © 2026 CÔNG TY TNHH THƯƠNG MẠI VÀ SẢN XUẤT SOMA. Tất cả quyền được bảo lưu.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- SLIDE-OVER CART DRAWER & CHECKOUT -->
+    <!-- ========================================================================= -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="toggleCartDrawer()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                <!-- Header -->
+                <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+                    <h2 class="text-lg font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping text-soma-400"></i> Giỏ hàng của bạn
+                    </h2>
+                    <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div class="flex-grow p-6 overflow-y-auto space-y-4" id="cart-items-container">
+                    <!-- Injected via JS -->
+                </div>
+
+                <!-- Footer Summary & Order -->
+                <div class="p-6 border-t border-slate-200 bg-slate-50 space-y-4">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-slate-600">Tạm tính:</span>
+                        <strong id="cart-total-price" class="text-xl font-black text-soma-800">0 VNĐ</strong>
+                    </div>
+                    <button onclick="openCheckoutModal()" class="w-full py-3.5 rounded-xl bg-soma-700 hover:bg-soma-800 text-white font-bold text-sm tracking-wide shadow-md transition">
+                        TIẾN HÀNH ĐẶT HÀNG / BÁO GIÁ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- PAINT CALCULATOR MODAL -->
+    <!-- ========================================================================= -->
+    <div id="calculator-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm" onclick="closeCalculatorModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full p-6 sm:p-8">
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4 mb-4">
+                    <h3 class="text-lg font-black text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-soma-600"></i> BẢNG TÍNH LƯỢNG SƠN DỰ TOÁN
+                    </h3>
+                    <button onclick="closeCalculatorModal()" class="text-slate-400 hover:text-slate-700">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Diện tích tường cần sơn (m²):</label>
+                        <input type="number" id="calc-area" value="100" min="10" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 font-bold text-slate-800 text-base">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Loại công trình:</label>
+                        <select id="calc-type" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-slate-800 font-medium">
+                            <option value="exterior">Sơn ngoại thất chống thấm (2 lớp lót + 2 lớp phủ)</option>
+                            <option value="interior">Sơn nội thất cao cấp (1 lớp lót + 2 lớp phủ)</option>
+                            <option value="waterproof">Chống thấm sàn / sàn mái (3 lớp CT-11A)</option>
+                        </select>
+                    </div>
+                    <button onclick="calculatePaint()" class="w-full py-3 rounded-xl bg-soma-800 hover:bg-soma-900 text-white font-bold transition">
+                        Tính toán ngay
+                    </button>
+
+                    <!-- Result Box -->
+                    <div id="calc-result" class="bg-soma-50 p-4 rounded-2xl border border-soma-200 mt-4 space-y-2 text-xs sm:text-sm">
+                        <div class="font-bold text-soma-900 border-b border-soma-200 pb-1">Dự toán vật tư ước tính (100 m²):</div>
+                        <div class="flex justify-between"><span>Sơn lót kháng kiềm:</span> <strong>~1 Thùng 18L</strong></div>
+                        <div class="flex justify-between"><span>Sơn phủ màu chống thấm:</span> <strong>~2 Thùng 18L</strong></div>
+                        <div class="flex justify-between"><span>Phụ gia SOMA Latex:</span> <strong>~1 Can 5KG</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING CONTACT WIDGETS -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Zalo Button -->
+        <a href="https://zalo.me/0889166655" target="_blank" class="w-12 h-12 rounded-full bg-blue-600 text-white shadow-xl hover:scale-110 transition flex items-center justify-center text-xl font-bold" title="Chat Zalo">
+            <i class="fa-solid fa-comment-dots"></i>
+        </a>
+        <!-- Call Button -->
+        <a href="tel:0889166655" class="w-12 h-12 rounded-full bg-soma-700 text-white shadow-xl hover:scale-110 transition flex items-center justify-center text-xl animate-bounce" title="Gọi Hotline">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- JAVASCRIPT APP LOGIC & DATA -->
+    <!-- ========================================================================= -->
+    <script>
+        // MASTER PRODUCTS DATA
+        const products = [
+            {
+                id: 1,
+                name: "Sơn Ngoại Thất Siêu Bóng Chống Thấm SOMA Nano Guard - 18L",
+                category: "ngoai-that",
+                categoryName: "Sơn ngoại thất",
+                code: "SOMA-EXT-023",
+                price: 1850000,
+                oldPrice: 2300000,
+                discount: "-20%",
+                image: "images/soma-ext-paint.jpg",
+                thumbnails: [
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-int-paint.jpg",
+                    "images/soma-latex.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "11 - 13 m²/Lít/Lớp",
+                warning: "Khuấy đều trước khi dùng. Thi công khi độ ẩm tường < 16%.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 2,
+                name: "Sơn Nội Thất Lau Chùi Hiệu Quả SOMA Clean Pro - 18L",
+                category: "noi-that",
+                categoryName: "Sơn nội thất",
+                code: "SOMA-INT-018",
+                price: 1250000,
+                oldPrice: 1550000,
+                discount: "-19%",
+                image: "images/soma-int-paint.jpg",
+                thumbnails: [
+                    "images/soma-int-paint.jpg",
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-latex.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "12 - 14 m²/Lít/Lớp",
+                warning: "Bề mặt cần sạch bụi bẩn và khô ráo hoàn toàn trước khi sơn.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 3,
+                name: "Phụ Gia Chống Thấm & Tác Nhân Kết Nối SOMA Latex - 5KG",
+                category: "phu-gia",
+                categoryName: "Phụ gia chống thấm",
+                code: "SOMA-LATEX-05",
+                price: 420000,
+                oldPrice: 550000,
+                discount: "-24%",
+                image: "images/soma-latex.jpg",
+                thumbnails: [
+                    "images/soma-latex.jpg",
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-int-paint.jpg"
+                ],
+                size: "Can 5 KG",
+                coverage: "Trộn tỷ lệ 1L SOMA Latex : 1L Nước : 4KG Xi măng",
+                warning: "Trộn đều với nước sạch trước khi cho vào hỗn hợp xi măng cát.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 4,
+                name: "Sơn Lót Kháng Kiềm Ngoại Thất Cao Cấp SOMA Sealer - 18L",
+                category: "ngoai-that",
+                categoryName: "Sơn ngoại thất",
+                code: "SOMA-SEA-018",
+                price: 1450000,
+                oldPrice: 1750000,
+                discount: "-17%",
+                image: "images/soma-ext-paint.jpg",
+                thumbnails: [
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-int-paint.jpg",
+                    "images/soma-latex.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "10 - 12 m²/Lít/Lớp",
+                warning: "Sơn 1-2 lớp trước khi thi công lớp sơn phủ màu.",
+                featured: false,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 5,
+                name: "Sơn Nội Thất Siêu Trắng Trần Cao Cấp SOMA White - 18L",
+                category: "noi-that",
+                categoryName: "Sơn nội thất",
+                code: "SOMA-WHT-018",
+                price: 980000,
+                oldPrice: 1200000,
+                discount: "-18%",
+                image: "images/soma-int-paint.jpg",
+                thumbnails: [
+                    "images/soma-int-paint.jpg",
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-latex.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "12 - 14 m²/Lít/Lớp",
+                warning: "Chuyên dụng cho bề mặt trần thạch cao và trần bê tông nội thất.",
+                featured: false,
+                rating: 5,
+                inStock: true
+            },
+            {
+                id: 6,
+                name: "Màng Chống Thấm Polyurethane Đa Năng SOMA Proof Ultra - 18L",
+                category: "chuyen-dung",
+                categoryName: "Chống thấm chuyên dụng",
+                code: "SOMA-PU-018",
+                price: 2650000,
+                oldPrice: 3100000,
+                discount: "-15%",
+                image: "images/soma-bucket-1.jpg",
+                thumbnails: [
+                    "images/soma-bucket-1.jpg",
+                    "images/soma-ext-paint.jpg",
+                    "images/soma-latex.jpg",
+                    "images/soma-int-paint.jpg"
+                ],
+                size: "18 Lít / Thùng",
+                coverage: "1.5 - 2.0 kg/m² cho 2 lớp",
+                warning: "Dành cho sàn mái lộ thiên, ban công, tầng hầm và bể nước.",
+                featured: true,
+                rating: 5,
+                inStock: true
+            }
+        ];
+
+        // CART STATE
+        let cart = [];
+        let currentSelectedProduct = products[0];
+
+        // Format currency helper
+        function formatVND(amount) {
+            return new Intl.NumberFormat('vi-VN').format(amount) + ' VNĐ';
+        }
+
+        // SPA Navigation Manager (Handles 3 pages: home, products, contact + product-detail)
+        function navigateTo(viewName, productId = null) {
+            // Hide all sections
+            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
+
+            // Reset navbar active styles
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('text-soma-800', 'border-soma-700', 'font-bold');
+                el.classList.add('text-slate-600', 'border-transparent', 'font-semibold');
+            });
+
+            // Show selected view
+            if (viewName === 'home') {
+                document.getElementById('view-home').classList.remove('hidden');
+                document.getElementById('nav-home')?.classList.add('text-soma-800', 'border-soma-700', 'font-bold');
+            } else if (viewName === 'products') {
+                document.getElementById('view-products').classList.remove('hidden');
+                document.getElementById('nav-products')?.classList.add('text-soma-800', 'border-soma-700', 'font-bold');
+                renderCatalog(products);
+            } else if (viewName === 'contact') {
+                document.getElementById('view-contact').classList.remove('hidden');
+                document.getElementById('nav-contact')?.classList.add('text-soma-800', 'border-soma-700', 'font-bold');
+            } else if (viewName === 'product-detail') {
+                document.getElementById('view-product-detail').classList.remove('hidden');
+                document.getElementById('nav-products')?.classList.add('text-soma-800', 'border-soma-700', 'font-bold');
+                if (productId) {
+                    loadProductDetail(productId);
+                }
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Render Home Featured Products
+        function renderHomeProducts(items) {
+            const container = document.getElementById('home-products-grid');
+            if (!container) return;
+
+            container.innerHTML = items.slice(0, 4).map(item => `
+                <div class="group bg-white rounded-2xl border border-slate-200 hover:border-soma-300 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col">
+                    <div class="relative p-4 bg-slate-50 flex items-center justify-center min-h-[220px] overflow-hidden cursor-pointer" onclick="navigateTo('product-detail', ${item.id})">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-black px-2.5 py-0.5 rounded-md shadow-sm z-10">
+                            ${item.discount}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-soma-800 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm z-10">
+                            SOMA
+                        </span>
+                        <img src="${item.image}" alt="${item.name}" class="h-44 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                    <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-sm hover:text-soma-700 transition cursor-pointer line-clamp-2" onclick="navigateTo('product-detail', ${item.id})">
+                                ${item.name}
+                            </h3>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-baseline justify-between">
+                                <span class="text-base font-black text-slate-900">${formatVND(item.price)}</span>
+                                <span class="text-xs text-slate-400 line-through">${formatVND(item.oldPrice)}</span>
+                            </div>
+
+                            <button onclick="addToCart(${item.id})" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-soma-700 hover:bg-soma-700 text-slate-700 hover:text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span>Thêm giỏ hàng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter tabs on Home
+        function filterHomeProducts(cat, btn) {
+            document.querySelectorAll('.home-tab').forEach(b => {
+                b.classList.remove('bg-soma-700', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            btn.classList.remove('bg-slate-100', 'text-slate-700');
+            btn.classList.add('bg-soma-700', 'text-white');
+
+            if (cat === 'all') {
+                renderHomeProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                renderHomeProducts(filtered);
+            }
+        }
+
+        // Render Catalog Grid (Image 6)
+        function renderCatalog(items) {
+            const container = document.getElementById('catalog-grid');
+            const countEl = document.getElementById('showing-count');
+            if (!container) return;
+
+            countEl.innerText = items.length;
+
+            if (items.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-3 py-16 text-center text-slate-400 space-y-3">
+                        <i class="fa-solid fa-box-open text-5xl"></i>
+                        <p class="text-base font-medium">Không tìm thấy sản phẩm phù hợp với bộ lọc.</p>
+                        <button onclick="resetAllFilters()" class="text-sm text-soma-700 font-bold underline">Đặt lại bộ lọc</button>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = items.map(item => `
+                <div class="group bg-white rounded-2xl border border-slate-200 hover:border-soma-300 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                    <div class="relative p-4 bg-slate-50 flex items-center justify-center min-h-[220px] cursor-pointer" onclick="navigateTo('product-detail', ${item.id})">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-black px-2 py-0.5 rounded shadow-sm z-10">
+                            ${item.discount}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-soma-800 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm z-10">
+                            SOMA
+                        </span>
+                        <img src="${item.image}" alt="${item.name}" class="h-44 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                    <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                        <h3 class="font-bold text-slate-800 text-sm hover:text-soma-700 transition cursor-pointer line-clamp-2" onclick="navigateTo('product-detail', ${item.id})">
+                            ${item.name}
+                        </h3>
+
+                        <div class="space-y-3">
+                            <div class="flex items-baseline justify-between">
+                                <span class="text-base font-black text-slate-900">${formatVND(item.price)}</span>
+                                <span class="text-xs text-slate-400 line-through">${formatVND(item.oldPrice)}</span>
+                            </div>
+
+                            <button onclick="addToCart(${item.id})" class="w-full py-2 rounded-xl border border-slate-300 hover:border-soma-700 hover:bg-soma-700 text-slate-700 hover:text-white font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-xs"></i>
+                                <span>Thêm giỏ hàng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Apply Sidebar Filters in Catalog
+        let selectedCategory = 'all';
+        let activeTag = null;
+
+        function filterCatalogCategory(cat, btn) {
+            selectedCategory = cat;
+            document.querySelectorAll('.catalog-cat-btn').forEach(b => {
+                b.classList.remove('font-bold', 'text-soma-700');
+                b.classList.add('text-slate-600');
+            });
+            btn.classList.add('font-bold', 'text-soma-700');
+            btn.classList.remove('text-slate-600');
+            applyFilters();
+        }
+
+        function filterProductsCategory(cat) {
+            navigateTo('products');
+            selectedCategory = cat;
+            applyFilters();
+        }
+
+        function toggleTagFilter(btn, tag) {
+            if (activeTag === tag) {
+                activeTag = null;
+                btn.classList.remove('bg-soma-700', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            } else {
+                document.querySelectorAll('.tag-btn').forEach(b => {
+                    b.classList.remove('bg-soma-700', 'text-white');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                activeTag = tag;
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-soma-700', 'text-white');
+            }
+            applyFilters();
+        }
+
+        function applyFilters() {
+            let filtered = [...products];
+
+            // Filter Category
+            if (selectedCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === selectedCategory);
+            }
+
+            // Filter Price
+            const checkedPrices = Array.from(document.querySelectorAll('input[name="price-filter"]:checked')).map(cb => cb.value);
+            if (checkedPrices.length > 0) {
+                filtered = filtered.filter(p => {
+                    return checkedPrices.some(val => {
+                        if (val === 'under-500k') return p.price < 500000;
+                        if (val === '500k-1500k') return p.price >= 500000 && p.price <= 1500000;
+                        if (val === 'above-1500k') return p.price > 1500000;
+                        return false;
+                    });
+                });
+            }
+
+            // Filter Tags
+            if (activeTag === 'featured') {
+                filtered = filtered.filter(p => p.featured);
+            } else if (activeTag === 'instock') {
+                filtered = filtered.filter(p => p.inStock);
+            }
+
+            // Sorting
+            const sortVal = document.getElementById('sort-select')?.value;
+            if (sortVal === 'price-asc') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (sortVal === 'price-desc') {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (sortVal === 'name-asc') {
+                filtered.sort((a, b) => a.name.localeCompare(b.name));
+            }
+
+            renderCatalog(filtered);
+        }
+
+        function resetAllFilters() {
+            selectedCategory = 'all';
+            activeTag = null;
+            document.querySelectorAll('input[name="price-filter"]').forEach(cb => cb.checked = false);
+            document.querySelectorAll('.tag-btn').forEach(b => {
+                b.classList.remove('bg-soma-700', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            document.getElementById('sort-select').value = 'default';
+            applyFilters();
+        }
+
+        // Load Single Product Detail Page (Matching Image 7)
+        function loadProductDetail(id) {
+            const product = products.find(p => p.id === id) || products[0];
+            currentSelectedProduct = product;
+
+            document.getElementById('detail-breadcrumb-cat').innerText = product.categoryName;
+            document.getElementById('detail-breadcrumb-name').innerText = product.name;
+            document.getElementById('detail-title').innerText = product.name;
+            document.getElementById('detail-code').innerText = product.code;
+            document.getElementById('detail-price').innerText = formatVND(product.price);
+            document.getElementById('detail-old-price').innerText = formatVND(product.oldPrice);
+            document.getElementById('detail-discount-badge').innerText = product.discount;
+            document.getElementById('detail-main-image').src = product.image;
+            document.getElementById('detail-qty').value = 1;
+            document.getElementById('spec-size').innerText = product.size;
+            document.getElementById('spec-coverage').innerText = product.coverage;
+            document.getElementById('spec-warning').innerText = product.warning;
+
+            // Render Thumbnails
+            const thumbsContainer = document.getElementById('detail-thumbnails');
+            thumbsContainer.innerHTML = product.thumbnails.map((src, idx) => `
+                <button onclick="switchDetailImage('${src}', this)" class="detail-thumb-btn rounded-xl border-2 ${idx === 0 ? 'border-soma-700' : 'border-slate-200'} bg-slate-50 p-2 overflow-hidden hover:border-soma-400 transition">
+                    <img src="${src}" class="w-full h-14 object-contain">
+                </button>
+            `).join('');
+        }
+
+        function switchDetailImage(src, btn) {
+            document.getElementById('detail-main-image').src = src;
+            document.querySelectorAll('.detail-thumb-btn').forEach(b => b.classList.replace('border-soma-700', 'border-slate-200'));
+            btn.classList.replace('border-slate-200', 'border-soma-700');
+        }
+
+        function changeDetailQty(delta) {
+            const input = document.getElementById('detail-qty');
+            let val = parseInt(input.value) || 1;
+            val = Math.max(1, val + delta);
+            input.value = val;
+        }
+
+        // CART LOGIC
+        function addToCart(productId, qty = 1) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                existing.qty += qty;
+            } else {
+                cart.push({ ...product, qty });
+            }
+
+            updateCartUI();
+            showToast(`Đã thêm "${product.name.slice(0, 30)}..." vào giỏ hàng!`);
+        }
+
+        function addToCartFromDetail() {
+            const qty = parseInt(document.getElementById('detail-qty').value) || 1;
+            addToCart(currentSelectedProduct.id, qty);
+        }
+
+        function buyNowFromDetail() {
+            addToCartFromDetail();
+            toggleCartDrawer();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const container = document.getElementById('cart-items-container');
+            const totalEl = document.getElementById('cart-total-price');
+
+            const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+            badge.innerText = totalCount;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-slate-400 space-y-3">
+                        <i class="fa-solid fa-cart-shopping text-4xl"></i>
+                        <p class="text-sm">Giỏ hàng của bạn đang trống</p>
+                    </div>
+                `;
+                totalEl.innerText = '0 VNĐ';
+                return;
+            }
+
+            let totalMoney = 0;
+            container.innerHTML = cart.map(item => {
+                const subtotal = item.price * item.qty;
+                totalMoney += subtotal;
+                return `
+                    <div class="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                        <img src="${item.image}" class="w-14 h-14 object-contain bg-white rounded-lg p-1 border border-slate-200">
+                        <div class="flex-grow">
+                            <h4 class="text-xs font-bold text-slate-800 line-clamp-1">${item.name}</h4>
+                            <div class="text-xs text-soma-800 font-bold mt-0.5">${formatVND(item.price)}</div>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button onclick="changeCartItemQty(${item.id}, -1)" class="w-5 h-5 bg-white border border-slate-300 rounded flex items-center justify-center text-xs font-bold">-</button>
+                                <span class="text-xs font-bold">${item.qty}</span>
+                                <button onclick="changeCartItemQty(${item.id}, 1)" class="w-5 h-5 bg-white border border-slate-300 rounded flex items-center justify-center text-xs font-bold">+</button>
+                            </div>
+                        </div>
+                        <button onclick="removeCartItem(${item.id})" class="text-slate-400 hover:text-red-500 p-1">
+                            <i class="fa-solid fa-trash-can text-sm"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            totalEl.innerText = formatVND(totalMoney);
+        }
+
+        function changeCartItemQty(id, delta) {
+            const item = cart.find(i => i.id === id);
+            if (!item) return;
+            item.qty += delta;
+            if (item.qty <= 0) {
+                cart = cart.filter(i => i.id !== id);
+            }
+            updateCartUI();
+        }
+
+        function removeCartItem(id) {
+            cart = cart.filter(i => i.id !== id);
+            updateCartUI();
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Paint Calculator
+        function openCalculatorModal() {
+            document.getElementById('calculator-modal').classList.remove('hidden');
+        }
+        function closeCalculatorModal() {
+            document.getElementById('calculator-modal').classList.add('hidden');
+        }
+        function calculatePaint() {
+            const area = parseFloat(document.getElementById('calc-area').value) || 100;
+            const type = document.getElementById('calc-type').value;
+
+            let lot = Math.ceil(area / 100);
+            let phu = Math.ceil(area / 60);
+            let latex = Math.ceil(area / 80);
+
+            document.getElementById('calc-result').innerHTML = `
+                <div class="font-bold text-soma-900 border-b border-soma-200 pb-1">Dự toán vật tư cho ${area} m²:</div>
+                <div class="flex justify-between"><span>Sơn lót kháng kiềm:</span> <strong>~${lot} Thùng 18L</strong></div>
+                <div class="flex justify-between"><span>Sơn phủ màu (${type === 'exterior' ? 'Ngoại thất' : 'Nội thất'}):</span> <strong>~${phu} Thùng 18L</strong></div>
+                <div class="flex justify-between"><span>Phụ gia SOMA Latex chống thấm:</span> <strong>~${latex} Can 5KG</strong></div>
+                <div class="text-[11px] text-slate-500 mt-2 italic">* Định mức tham khảo thực tế dựa trên bề mặt tường tiêu chuẩn.</div>
+            `;
+        }
+
+        // Search Modal Mockup
+        function toggleSearchModal() {
+            const query = prompt('Nhập tên sản phẩm cần tìm kiếm (Ví dụ: Sơn ngoại thất, Latex, Nano):');
+            if (query && query.trim()) {
+                navigateTo('products');
+                const matched = products.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
+                renderCatalog(matched);
+            }
+        }
+
+        // Checkout Modal Mockup
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                alert('Giỏ hàng trống! Vui lòng chọn sản phẩm trước.');
+                return;
+            }
+            const phone = prompt('Vui lòng nhập Số điện thoại để SOMA liên hệ giao hàng & báo giá chiết khấu:');
+            if (phone) {
+                alert(`Cảm ơn bạn! SOMA đã tiếp nhận đơn hàng (${formatVND(cart.reduce((s, i) => s + i.price * i.qty, 0))}). Bộ phận CSKH sẽ gọi tới ${phone} ngay.`);
+                cart = [];
+                updateCartUI();
+                toggleCartDrawer();
+            }
+        }
+
+        // Contact Form Submission (Image 8)
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã gửi yêu cầu! Ban Giám Đốc và Bộ phận Kỹ thuật Công ty SOMA sẽ liên hệ phản hồi trong thời gian sớm nhất.');
+            e.target.reset();
+        }
+
+        // Toast feedback
+        function showToast(msg) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-24 right-6 z-50 bg-soma-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-soma-500/50 flex items-center gap-2.5 text-sm font-semibold animate-bounce';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-cyan-400"></i> <span>${msg}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 2800);
+        }
+
+        // Initial Boot
+        document.addEventListener('DOMContentLoaded', () => {
+            renderHomeProducts(products);
+            renderCatalog(products);
+            updateCartUI();
+        });
+    </script>
+</body>
+</html>
